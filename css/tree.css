@@ -1,0 +1,25 @@
+.tree-node {
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+    .cell-text-input {
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        font-variation-settings:
+          "wdth" 100;
+    }
+}
+
+.inner-tree-value {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.tree-expand-collapse {
+    cursor: pointer;
+    order: -1;
+    color: #B9B9B9;
+}
