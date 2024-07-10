@@ -1,14 +1,14 @@
 goog.provide('enigma_nexus.table.table');
 enigma_nexus.table.table.cell = (function enigma_nexus$table$table$cell(var_args){
 var args__5772__auto__ = [];
-var len__5766__auto___77793 = arguments.length;
-var i__5767__auto___77794 = (0);
+var len__5766__auto___60437 = arguments.length;
+var i__5767__auto___60438 = (0);
 while(true){
-if((i__5767__auto___77794 < len__5766__auto___77793)){
-args__5772__auto__.push((arguments[i__5767__auto___77794]));
+if((i__5767__auto___60438 < len__5766__auto___60437)){
+args__5772__auto__.push((arguments[i__5767__auto___60438]));
 
-var G__77795 = (i__5767__auto___77794 + (1));
-i__5767__auto___77794 = G__77795;
+var G__60439 = (i__5767__auto___60438 + (1));
+i__5767__auto___60438 = G__60439;
 continue;
 } else {
 }
@@ -20,18 +20,18 @@ return enigma_nexus.table.table.cell.cljs$core$IFn$_invoke$arity$variadic((argum
 });
 
 (enigma_nexus.table.table.cell.cljs$core$IFn$_invoke$arity$variadic = (function (props,children){
-var map__77784 = props;
-var map__77784__$1 = cljs.core.__destructure_map(map__77784);
-var table_data_STAR_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__77784__$1,new cljs.core.Keyword(null,"table-data*","table-data*",1671610004));
-var row_index = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__77784__$1,new cljs.core.Keyword(null,"row-index","row-index",-828710296));
-var column_index = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__77784__$1,new cljs.core.Keyword(null,"column-index","column-index",470522340));
-var class$ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__77784__$1,new cljs.core.Keyword(null,"class","class",-2030961996));
-var with_let77785 = reagent.ratom.with_let_values(new cljs.core.Keyword(null,"with-let77785","with-let77785",-1196504476));
-var temp__5808__auto___77797 = reagent.ratom._STAR_ratom_context_STAR_;
-if((temp__5808__auto___77797 == null)){
+var map__60426 = props;
+var map__60426__$1 = cljs.core.__destructure_map(map__60426);
+var table_data_STAR_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__60426__$1,new cljs.core.Keyword(null,"table-data*","table-data*",1671610004));
+var row_index = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__60426__$1,new cljs.core.Keyword(null,"row-index","row-index",-828710296));
+var column_index = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__60426__$1,new cljs.core.Keyword(null,"column-index","column-index",470522340));
+var class$ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__60426__$1,new cljs.core.Keyword(null,"class","class",-2030961996));
+var with_let60427 = reagent.ratom.with_let_values(new cljs.core.Keyword(null,"with-let60427","with-let60427",1547704564));
+var temp__5808__auto___60440 = reagent.ratom._STAR_ratom_context_STAR_;
+if((temp__5808__auto___60440 == null)){
 } else {
-var c__59044__auto___77798 = temp__5808__auto___77797;
-if((with_let77785.generation === c__59044__auto___77798.ratomGeneration)){
+var c__59044__auto___60441 = temp__5808__auto___60440;
+if((with_let60427.generation === c__59044__auto___60441.ratomGeneration)){
 if(reagent.debug.has_console){
 ((reagent.debug.tracking)?reagent.debug.track_console:console).error(["Warning: The same with-let is being used more ","than once in the same reactive context."].join(''));
 } else {
@@ -39,36 +39,36 @@ if(reagent.debug.has_console){
 } else {
 }
 
-(with_let77785.generation = c__59044__auto___77798.ratomGeneration);
+(with_let60427.generation = c__59044__auto___60441.ratomGeneration);
 }
 
-var init77786 = (with_let77785.length === (0));
-var indicators_STAR_ = ((((init77786) || (cljs.core.not(with_let77785.hasOwnProperty((0))))))?(with_let77785[(0)] = reagent.core.cursor(table_data_STAR_,new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"rows","rows",850049680),row_index,new cljs.core.Keyword(null,"columns","columns",1998437288),column_index,new cljs.core.Keyword(null,"indicators","indicators",1312373003)], null))):(with_let77785[(0)]));
-var res77787 = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"class","class",-2030961996),class$,new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (){
+var init60428 = (with_let60427.length === (0));
+var indicators_STAR_ = ((((init60428) || (cljs.core.not(with_let60427.hasOwnProperty((0))))))?(with_let60427[(0)] = reagent.core.cursor(table_data_STAR_,new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"rows","rows",850049680),row_index,new cljs.core.Keyword(null,"columns","columns",1998437288),column_index,new cljs.core.Keyword(null,"indicators","indicators",1312373003)], null))):(with_let60427[(0)]));
+var res60429 = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"class","class",-2030961996),class$,new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (){
 return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$3(indicators_STAR_,cljs.core.conj,new cljs.core.Keyword(null,"clicked","clicked",114423720));
 }),new cljs.core.Keyword(null,"on-mouse-enter","on-mouse-enter",-1664921661),(function (){
 return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$3(indicators_STAR_,cljs.core.conj,new cljs.core.Keyword(null,"hovered","hovered",399068143));
 }),new cljs.core.Keyword(null,"on-mouse-leave","on-mouse-leave",-1864319528),(function (){
 return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$3(indicators_STAR_,cljs.core.disj,new cljs.core.Keyword(null,"hovered","hovered",399068143));
 })], null),children], null);
-return res77787;
+return res60429;
 }));
 
 (enigma_nexus.table.table.cell.cljs$lang$maxFixedArity = (1));
 
 /** @this {Function} */
-(enigma_nexus.table.table.cell.cljs$lang$applyTo = (function (seq77776){
-var G__77777 = cljs.core.first(seq77776);
-var seq77776__$1 = cljs.core.next(seq77776);
+(enigma_nexus.table.table.cell.cljs$lang$applyTo = (function (seq60423){
+var G__60424 = cljs.core.first(seq60423);
+var seq60423__$1 = cljs.core.next(seq60423);
 var self__5751__auto__ = this;
-return self__5751__auto__.cljs$core$IFn$_invoke$arity$variadic(G__77777,seq77776__$1);
+return self__5751__auto__.cljs$core$IFn$_invoke$arity$variadic(G__60424,seq60423__$1);
 }));
 
 enigma_nexus.table.table.table = (function enigma_nexus$table$table$table(props){
-var map__77791 = props;
-var map__77791__$1 = cljs.core.__destructure_map(map__77791);
-var table_data_STAR_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__77791__$1,new cljs.core.Keyword(null,"table-data*","table-data*",1671610004));
-var class$ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__77791__$1,new cljs.core.Keyword(null,"class","class",-2030961996));
+var map__60431 = props;
+var map__60431__$1 = cljs.core.__destructure_map(map__60431);
+var table_data_STAR_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__60431__$1,new cljs.core.Keyword(null,"table-data*","table-data*",1671610004));
+var class$ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__60431__$1,new cljs.core.Keyword(null,"class","class",-2030961996));
 var row_class = [cljs.core.str.cljs$core$IFn$_invoke$arity$1(class$),"-row"].join('');
 var cell_class = [cljs.core.str.cljs$core$IFn$_invoke$arity$1(class$),"-cell"].join('');
 var expanded = new cljs.core.Keyword(null,"expanded","expanded",-3020742).cljs$core$IFn$_invoke$arity$1(cljs.core.deref(table_data_STAR_));

@@ -1,32 +1,32 @@
 goog.provide('enigma_nexus.tree.state');
 enigma_nexus.tree.state.document_leaf = (function enigma_nexus$tree$state$document_leaf(){
-return true;
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span","span",1394872991),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),"document"], null)], null);
 });
 enigma_nexus.tree.state.decompile_from_tree = (function enigma_nexus$tree$state$decompile_from_tree(tree){
-var G__71327 = new cljs.core.Keyword(null,"type","type",1174270348).cljs$core$IFn$_invoke$arity$1(tree);
-var G__71327__$1 = (((G__71327 instanceof cljs.core.Keyword))?G__71327.fqn:null);
-switch (G__71327__$1) {
+var G__60682 = new cljs.core.Keyword(null,"type","type",1174270348).cljs$core$IFn$_invoke$arity$1(tree);
+var G__60682__$1 = (((G__60682 instanceof cljs.core.Keyword))?G__60682.fqn:null);
+switch (G__60682__$1) {
 case "scalar":
 return new cljs.core.Keyword(null,"value","value",305978217).cljs$core$IFn$_invoke$arity$1(tree);
 
 break;
 case "map":
 return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.merge,cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (item){
-return cljs.core.PersistentArrayMap.createAsIfByAssoc([new cljs.core.Keyword(null,"value","value",305978217).cljs$core$IFn$_invoke$arity$1(item),(function (){var G__71328 = cljs.core.first(new cljs.core.Keyword(null,"tree","tree",-196312028).cljs$core$IFn$_invoke$arity$1(item));
-return (enigma_nexus.tree.state.decompile_from_tree.cljs$core$IFn$_invoke$arity$1 ? enigma_nexus.tree.state.decompile_from_tree.cljs$core$IFn$_invoke$arity$1(G__71328) : enigma_nexus.tree.state.decompile_from_tree.call(null,G__71328));
+return cljs.core.PersistentArrayMap.createAsIfByAssoc([new cljs.core.Keyword(null,"value","value",305978217).cljs$core$IFn$_invoke$arity$1(item),(function (){var G__60683 = cljs.core.first(new cljs.core.Keyword(null,"tree","tree",-196312028).cljs$core$IFn$_invoke$arity$1(item));
+return (enigma_nexus.tree.state.decompile_from_tree.cljs$core$IFn$_invoke$arity$1 ? enigma_nexus.tree.state.decompile_from_tree.cljs$core$IFn$_invoke$arity$1(G__60683) : enigma_nexus.tree.state.decompile_from_tree.call(null,G__60683));
 })()]);
 }),new cljs.core.Keyword(null,"tree","tree",-196312028).cljs$core$IFn$_invoke$arity$1(tree)));
 
 break;
 case "vector":
 return cljs.core.mapv.cljs$core$IFn$_invoke$arity$2((function (item){
-var G__71329 = cljs.core.first(new cljs.core.Keyword(null,"tree","tree",-196312028).cljs$core$IFn$_invoke$arity$1(item));
-return (enigma_nexus.tree.state.decompile_from_tree.cljs$core$IFn$_invoke$arity$1 ? enigma_nexus.tree.state.decompile_from_tree.cljs$core$IFn$_invoke$arity$1(G__71329) : enigma_nexus.tree.state.decompile_from_tree.call(null,G__71329));
+var G__60684 = cljs.core.first(new cljs.core.Keyword(null,"tree","tree",-196312028).cljs$core$IFn$_invoke$arity$1(item));
+return (enigma_nexus.tree.state.decompile_from_tree.cljs$core$IFn$_invoke$arity$1 ? enigma_nexus.tree.state.decompile_from_tree.cljs$core$IFn$_invoke$arity$1(G__60684) : enigma_nexus.tree.state.decompile_from_tree.call(null,G__60684));
 }),new cljs.core.Keyword(null,"tree","tree",-196312028).cljs$core$IFn$_invoke$arity$1(tree));
 
 break;
 default:
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__71327__$1)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__60682__$1)].join('')));
 
 }
 });
@@ -40,10 +40,10 @@ return new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null,"va
 }),data))], null);
 } else {
 if(cljs.core.map_QMARK_(data)){
-return new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"indicators","indicators",1312373003),new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"expanded","expanded",-3020742),null], null), null),new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"map","map",1371690461),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.tree.skins.cell_text_input], null),new cljs.core.Keyword(null,"tree","tree",-196312028),cljs.core.vec(cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p__71330){
-var vec__71331 = p__71330;
-var key = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__71331,(0),null);
-var item = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__71331,(1),null);
+return new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"indicators","indicators",1312373003),new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"expanded","expanded",-3020742),null], null), null),new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"map","map",1371690461),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.tree.skins.cell_text_input], null),new cljs.core.Keyword(null,"tree","tree",-196312028),cljs.core.vec(cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p__60685){
+var vec__60686 = p__60685;
+var key = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__60686,(0),null);
+var item = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__60686,(1),null);
 return new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null,"value","value",305978217),(((key instanceof cljs.core.Keyword))?cljs.core.str.cljs$core$IFn$_invoke$arity$1(key):key),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"map-key","map-key",1899483661),new cljs.core.Keyword(null,"tree","tree",-196312028),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [(enigma_nexus.tree.state.compile_to_tree.cljs$core$IFn$_invoke$arity$1 ? enigma_nexus.tree.state.compile_to_tree.cljs$core$IFn$_invoke$arity$1(item) : enigma_nexus.tree.state.compile_to_tree.call(null,item))], null),new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.tree.skins.cell_text_input,enigma_nexus.tree.skins.expand_collapse], null)], null);
 }),data))], null);
 } else {
