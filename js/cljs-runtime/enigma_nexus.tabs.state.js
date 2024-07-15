@@ -1,78 +1,75 @@
 goog.provide('enigma_nexus.tabs.state');
-enigma_nexus.tabs.state.figma_tab = (function enigma_nexus$tabs$state$figma_tab(title){
-return reagent.core.atom.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"expanded","expanded",-3020742),true,new cljs.core.Keyword(null,"header","header",119441134),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"class","class",-2030961996),"menu-cell",new cljs.core.Keyword(null,"content","content",15833224),title,new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.tabs.skins.ticket_header_text,enigma_nexus.tabs.skins.active_tab_indication], null)], null),new cljs.core.Keyword(null,"rows","rows",850049680),new cljs.core.PersistentVector(null, 10, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.column_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.expand_collapse], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),"Container",new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.column_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),"Version",new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.column_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),"Tags",new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.column_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null)], null)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),"Images",new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.column_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.expand_collapse], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"content","content",15833224),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"expanded","expanded",-3020742),false,new cljs.core.Keyword(null,"rows","rows",850049680),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select_header,enigma_nexus.table.skins.expand_collapse], null),new cljs.core.Keyword(null,"content","content",15833224),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, ["Dell_BKC_Crockett"], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null)], null)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.single_select_option], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"content","content",15833224),"B"], null)], null)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.single_select_option], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"content","content",15833224),"C"], null)], null)], null)], null)], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"content","content",15833224),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"expanded","expanded",-3020742),false,new cljs.core.Keyword(null,"rows","rows",850049680),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select_header,enigma_nexus.table.skins.expand_collapse], null),new cljs.core.Keyword(null,"content","content",15833224),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, ["Dell_BKC_Crockett"], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null)], null)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.single_select_option], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"content","content",15833224),"B"], null)], null)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.single_select_option], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"content","content",15833224),"C"], null)], null)], null)], null)], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"content","content",15833224),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"expanded","expanded",-3020742),false,new cljs.core.Keyword(null,"rows","rows",850049680),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select_header,enigma_nexus.table.skins.expand_collapse], null),new cljs.core.Keyword(null,"content","content",15833224),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, ["Dell_BKC_Crockett"], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null)], null)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.single_select_option], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"content","content",15833224),"B"], null)], null)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.single_select_option], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"content","content",15833224),"C"], null)], null)], null)], null)], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null)], null)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),"Drivers",new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.column_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.expand_collapse], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"content","content",15833224),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"expanded","expanded",-3020742),false,new cljs.core.Keyword(null,"rows","rows",850049680),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select_header,enigma_nexus.table.skins.expand_collapse], null),new cljs.core.Keyword(null,"content","content",15833224),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, ["Dell_BKC_Crockett"], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null)], null)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.single_select_option], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"content","content",15833224),"B"], null)], null)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.single_select_option], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"content","content",15833224),"C"], null)], null)], null)], null)], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"content","content",15833224),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"expanded","expanded",-3020742),false,new cljs.core.Keyword(null,"rows","rows",850049680),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select_header,enigma_nexus.table.skins.expand_collapse], null),new cljs.core.Keyword(null,"content","content",15833224),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, ["Dell_BKC_Crockett"], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null)], null)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.single_select_option], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"content","content",15833224),"B"], null)], null)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.single_select_option], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"content","content",15833224),"C"], null)], null)], null)], null)], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"content","content",15833224),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"expanded","expanded",-3020742),false,new cljs.core.Keyword(null,"rows","rows",850049680),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select_header,enigma_nexus.table.skins.expand_collapse], null),new cljs.core.Keyword(null,"content","content",15833224),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, ["Dell_BKC_Crockett"], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null)], null)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.single_select_option], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"content","content",15833224),"B"], null)], null)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.single_select_option], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"content","content",15833224),"C"], null)], null)], null)], null)], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null)], null)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),"Hover",new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.column_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.expand_collapse], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"content","content",15833224),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"expanded","expanded",-3020742),false,new cljs.core.Keyword(null,"rows","rows",850049680),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select_header,enigma_nexus.table.skins.expand_collapse], null),new cljs.core.Keyword(null,"content","content",15833224),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, ["Dell_BKC_Crockett"], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null)], null)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.single_select_option], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"content","content",15833224),"B"], null)], null)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.single_select_option], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"content","content",15833224),"C"], null)], null)], null)], null)], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"content","content",15833224),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"expanded","expanded",-3020742),false,new cljs.core.Keyword(null,"rows","rows",850049680),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select_header,enigma_nexus.table.skins.expand_collapse], null),new cljs.core.Keyword(null,"content","content",15833224),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, ["Dell_BKC_Crockett"], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null)], null)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.single_select_option], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"content","content",15833224),"B"], null)], null)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.single_select_option], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"content","content",15833224),"C"], null)], null)], null)], null)], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"content","content",15833224),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"expanded","expanded",-3020742),false,new cljs.core.Keyword(null,"rows","rows",850049680),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select_header,enigma_nexus.table.skins.expand_collapse], null),new cljs.core.Keyword(null,"content","content",15833224),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, ["Dell_BKC_Crockett"], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null)], null)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.single_select_option], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"content","content",15833224),"B"], null)], null)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.single_select_option], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"content","content",15833224),"C"], null)], null)], null)], null)], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null)], null)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),cljs.core.PersistentVector.EMPTY], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),cljs.core.PersistentVector.EMPTY], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),cljs.core.PersistentVector.EMPTY], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),cljs.core.PersistentVector.EMPTY], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),cljs.core.PersistentVector.EMPTY], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),cljs.core.PersistentVector.EMPTY], null)], null)], null));
-});
-enigma_nexus.tabs.state.empty_tab = (function enigma_nexus$tabs$state$empty_tab(row_count,column_count,title){
-return reagent.core.atom.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"expanded","expanded",-3020742),true,new cljs.core.Keyword(null,"header","header",119441134),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"class","class",-2030961996),"menu-cell",new cljs.core.Keyword(null,"content","content",15833224),title,new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.tabs.skins.ticket_header_text,enigma_nexus.tabs.skins.active_tab_indication], null)], null),new cljs.core.Keyword(null,"rows","rows",850049680),cljs.core.vec((function (){var iter__5520__auto__ = (function enigma_nexus$tabs$state$empty_tab_$_iter__60537(s__60538){
+enigma_nexus.tabs.state.add_new_tab = (function enigma_nexus$tabs$state$add_new_tab(multi_tab_table_STAR_,row_count,column_count){
+return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$3(multi_tab_table_STAR_,cljs.core.conj,reagent.core.atom.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"expanded","expanded",-3020742),true,new cljs.core.Keyword(null,"header","header",119441134),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"class","class",-2030961996),"menu-cell",new cljs.core.Keyword(null,"content","content",15833224),"New Tab",new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.tabs.skins.ticket_header_text,enigma_nexus.tabs.skins.active_tab_indication], null)], null),new cljs.core.Keyword(null,"rows","rows",850049680),cljs.core.vec((function (){var iter__5520__auto__ = (function enigma_nexus$tabs$state$add_new_tab_$_iter__59468(s__59469){
 return (new cljs.core.LazySeq(null,(function (){
-var s__60538__$1 = s__60538;
+var s__59469__$1 = s__59469;
 while(true){
-var temp__5804__auto__ = cljs.core.seq(s__60538__$1);
+var temp__5804__auto__ = cljs.core.seq(s__59469__$1);
 if(temp__5804__auto__){
-var s__60538__$2 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__60538__$2)){
-var c__5518__auto__ = cljs.core.chunk_first(s__60538__$2);
+var s__59469__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__59469__$2)){
+var c__5518__auto__ = cljs.core.chunk_first(s__59469__$2);
 var size__5519__auto__ = cljs.core.count(c__5518__auto__);
-var b__60540 = cljs.core.chunk_buffer(size__5519__auto__);
-if((function (){var i__60539 = (0);
+var b__59471 = cljs.core.chunk_buffer(size__5519__auto__);
+if((function (){var i__59470 = (0);
 while(true){
-if((i__60539 < size__5519__auto__)){
-var row_index = cljs.core._nth(c__5518__auto__,i__60539);
-cljs.core.chunk_append(b__60540,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),cljs.core.vec((function (){var iter__5520__auto__ = ((function (i__60539,row_index,c__5518__auto__,size__5519__auto__,b__60540,s__60538__$2,temp__5804__auto__){
-return (function enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60545(s__60546){
-return (new cljs.core.LazySeq(null,((function (i__60539,row_index,c__5518__auto__,size__5519__auto__,b__60540,s__60538__$2,temp__5804__auto__){
+if((i__59470 < size__5519__auto__)){
+var row_index = cljs.core._nth(c__5518__auto__,i__59470);
+cljs.core.chunk_append(b__59471,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),cljs.core.vec((function (){var iter__5520__auto__ = ((function (i__59470,row_index,c__5518__auto__,size__5519__auto__,b__59471,s__59469__$2,temp__5804__auto__){
+return (function enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59474(s__59475){
+return (new cljs.core.LazySeq(null,((function (i__59470,row_index,c__5518__auto__,size__5519__auto__,b__59471,s__59469__$2,temp__5804__auto__){
 return (function (){
-var s__60546__$1 = s__60546;
+var s__59475__$1 = s__59475;
 while(true){
-var temp__5804__auto____$1 = cljs.core.seq(s__60546__$1);
+var temp__5804__auto____$1 = cljs.core.seq(s__59475__$1);
 if(temp__5804__auto____$1){
-var s__60546__$2 = temp__5804__auto____$1;
-if(cljs.core.chunked_seq_QMARK_(s__60546__$2)){
-var c__5518__auto____$1 = cljs.core.chunk_first(s__60546__$2);
+var s__59475__$2 = temp__5804__auto____$1;
+if(cljs.core.chunked_seq_QMARK_(s__59475__$2)){
+var c__5518__auto____$1 = cljs.core.chunk_first(s__59475__$2);
 var size__5519__auto____$1 = cljs.core.count(c__5518__auto____$1);
-var b__60548 = cljs.core.chunk_buffer(size__5519__auto____$1);
-if((function (){var i__60547 = (0);
+var b__59477 = cljs.core.chunk_buffer(size__5519__auto____$1);
+if((function (){var i__59476 = (0);
 while(true){
-if((i__60547 < size__5519__auto____$1)){
-var column_index = cljs.core._nth(c__5518__auto____$1,i__60547);
-cljs.core.chunk_append(b__60548,cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null], null),((((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(row_index,(0))) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(column_index,(0)))))?new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.column_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.expand_collapse], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null):((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(column_index,(0)))?new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.row_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null):((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(row_index,(0)))?new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.column_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null):((((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(row_index,(1))) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(column_index,(1)))))?new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.table_in_table,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"content","content",15833224),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"expanded","expanded",-3020742),true,new cljs.core.Keyword(null,"rows","rows",850049680),cljs.core.vec((function (){var iter__5520__auto__ = ((function (i__60547,i__60539,column_index,c__5518__auto____$1,size__5519__auto____$1,b__60548,s__60546__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__60540,s__60538__$2,temp__5804__auto__){
-return (function enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60545_$_iter__60549(s__60550){
-return (new cljs.core.LazySeq(null,((function (i__60547,i__60539,column_index,c__5518__auto____$1,size__5519__auto____$1,b__60548,s__60546__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__60540,s__60538__$2,temp__5804__auto__){
+if((i__59476 < size__5519__auto____$1)){
+var column_index = cljs.core._nth(c__5518__auto____$1,i__59476);
+cljs.core.chunk_append(b__59477,cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null], null),((((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(row_index,(0))) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(column_index,(0)))))?new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.column_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.expand_collapse], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null):((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(column_index,(0)))?new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.row_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null):((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(row_index,(0)))?new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.column_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null):((((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(row_index,(1))) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(column_index,(1)))))?new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.table_in_table,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"content","content",15833224),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"expanded","expanded",-3020742),true,new cljs.core.Keyword(null,"rows","rows",850049680),cljs.core.vec((function (){var iter__5520__auto__ = ((function (i__59476,i__59470,column_index,c__5518__auto____$1,size__5519__auto____$1,b__59477,s__59475__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__59471,s__59469__$2,temp__5804__auto__){
+return (function enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59474_$_iter__59489(s__59490){
+return (new cljs.core.LazySeq(null,((function (i__59476,i__59470,column_index,c__5518__auto____$1,size__5519__auto____$1,b__59477,s__59475__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__59471,s__59469__$2,temp__5804__auto__){
 return (function (){
-var s__60550__$1 = s__60550;
+var s__59490__$1 = s__59490;
 while(true){
-var temp__5804__auto____$2 = cljs.core.seq(s__60550__$1);
+var temp__5804__auto____$2 = cljs.core.seq(s__59490__$1);
 if(temp__5804__auto____$2){
-var s__60550__$2 = temp__5804__auto____$2;
-if(cljs.core.chunked_seq_QMARK_(s__60550__$2)){
-var c__5518__auto____$2 = cljs.core.chunk_first(s__60550__$2);
+var s__59490__$2 = temp__5804__auto____$2;
+if(cljs.core.chunked_seq_QMARK_(s__59490__$2)){
+var c__5518__auto____$2 = cljs.core.chunk_first(s__59490__$2);
 var size__5519__auto____$2 = cljs.core.count(c__5518__auto____$2);
-var b__60552 = cljs.core.chunk_buffer(size__5519__auto____$2);
-if((function (){var i__60551 = (0);
+var b__59492 = cljs.core.chunk_buffer(size__5519__auto____$2);
+if((function (){var i__59491 = (0);
 while(true){
-if((i__60551 < size__5519__auto____$2)){
-var row_index__$1 = cljs.core._nth(c__5518__auto____$2,i__60551);
-cljs.core.chunk_append(b__60552,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),cljs.core.vec((function (){var iter__5520__auto__ = ((function (i__60551,i__60547,i__60539,row_index__$1,c__5518__auto____$2,size__5519__auto____$2,b__60552,s__60550__$2,temp__5804__auto____$2,column_index,c__5518__auto____$1,size__5519__auto____$1,b__60548,s__60546__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__60540,s__60538__$2,temp__5804__auto__){
-return (function enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60545_$_iter__60549_$_iter__60553(s__60554){
-return (new cljs.core.LazySeq(null,((function (i__60551,i__60547,i__60539,row_index__$1,c__5518__auto____$2,size__5519__auto____$2,b__60552,s__60550__$2,temp__5804__auto____$2,column_index,c__5518__auto____$1,size__5519__auto____$1,b__60548,s__60546__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__60540,s__60538__$2,temp__5804__auto__){
+if((i__59491 < size__5519__auto____$2)){
+var row_index__$1 = cljs.core._nth(c__5518__auto____$2,i__59491);
+cljs.core.chunk_append(b__59492,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),cljs.core.vec((function (){var iter__5520__auto__ = ((function (i__59491,i__59476,i__59470,row_index__$1,c__5518__auto____$2,size__5519__auto____$2,b__59492,s__59490__$2,temp__5804__auto____$2,column_index,c__5518__auto____$1,size__5519__auto____$1,b__59477,s__59475__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__59471,s__59469__$2,temp__5804__auto__){
+return (function enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59474_$_iter__59489_$_iter__59496(s__59497){
+return (new cljs.core.LazySeq(null,((function (i__59491,i__59476,i__59470,row_index__$1,c__5518__auto____$2,size__5519__auto____$2,b__59492,s__59490__$2,temp__5804__auto____$2,column_index,c__5518__auto____$1,size__5519__auto____$1,b__59477,s__59475__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__59471,s__59469__$2,temp__5804__auto__){
 return (function (){
-var s__60554__$1 = s__60554;
+var s__59497__$1 = s__59497;
 while(true){
-var temp__5804__auto____$3 = cljs.core.seq(s__60554__$1);
+var temp__5804__auto____$3 = cljs.core.seq(s__59497__$1);
 if(temp__5804__auto____$3){
-var s__60554__$2 = temp__5804__auto____$3;
-if(cljs.core.chunked_seq_QMARK_(s__60554__$2)){
-var c__5518__auto____$3 = cljs.core.chunk_first(s__60554__$2);
+var s__59497__$2 = temp__5804__auto____$3;
+if(cljs.core.chunked_seq_QMARK_(s__59497__$2)){
+var c__5518__auto____$3 = cljs.core.chunk_first(s__59497__$2);
 var size__5519__auto____$3 = cljs.core.count(c__5518__auto____$3);
-var b__60556 = cljs.core.chunk_buffer(size__5519__auto____$3);
-if((function (){var i__60555 = (0);
+var b__59499 = cljs.core.chunk_buffer(size__5519__auto____$3);
+if((function (){var i__59498 = (0);
 while(true){
-if((i__60555 < size__5519__auto____$3)){
-var column_index__$1 = cljs.core._nth(c__5518__auto____$3,i__60555);
-cljs.core.chunk_append(b__60556,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null));
+if((i__59498 < size__5519__auto____$3)){
+var column_index__$1 = cljs.core._nth(c__5518__auto____$3,i__59498);
+cljs.core.chunk_append(b__59499,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null));
 
-var G__60606 = (i__60555 + (1));
-i__60555 = G__60606;
+var G__59586 = (i__59498 + (1));
+i__59498 = G__59586;
 continue;
 } else {
 return true;
@@ -80,28 +77,28 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__60556),enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60545_$_iter__60549_$_iter__60553(cljs.core.chunk_rest(s__60554__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__59499),enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59474_$_iter__59489_$_iter__59496(cljs.core.chunk_rest(s__59497__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__60556),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__59499),null);
 }
 } else {
-var column_index__$1 = cljs.core.first(s__60554__$2);
-return cljs.core.cons(new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null),enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60545_$_iter__60549_$_iter__60553(cljs.core.rest(s__60554__$2)));
+var column_index__$1 = cljs.core.first(s__59497__$2);
+return cljs.core.cons(new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null),enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59474_$_iter__59489_$_iter__59496(cljs.core.rest(s__59497__$2)));
 }
 } else {
 return null;
 }
 break;
 }
-});})(i__60551,i__60547,i__60539,row_index__$1,c__5518__auto____$2,size__5519__auto____$2,b__60552,s__60550__$2,temp__5804__auto____$2,column_index,c__5518__auto____$1,size__5519__auto____$1,b__60548,s__60546__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__60540,s__60538__$2,temp__5804__auto__))
+});})(i__59491,i__59476,i__59470,row_index__$1,c__5518__auto____$2,size__5519__auto____$2,b__59492,s__59490__$2,temp__5804__auto____$2,column_index,c__5518__auto____$1,size__5519__auto____$1,b__59477,s__59475__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__59471,s__59469__$2,temp__5804__auto__))
 ,null,null));
-});})(i__60551,i__60547,i__60539,row_index__$1,c__5518__auto____$2,size__5519__auto____$2,b__60552,s__60550__$2,temp__5804__auto____$2,column_index,c__5518__auto____$1,size__5519__auto____$1,b__60548,s__60546__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__60540,s__60538__$2,temp__5804__auto__))
+});})(i__59491,i__59476,i__59470,row_index__$1,c__5518__auto____$2,size__5519__auto____$2,b__59492,s__59490__$2,temp__5804__auto____$2,column_index,c__5518__auto____$1,size__5519__auto____$1,b__59477,s__59475__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__59471,s__59469__$2,temp__5804__auto__))
 ;
 return iter__5520__auto__(cljs.core.range.cljs$core$IFn$_invoke$arity$1((5)));
 })())], null));
 
-var G__60607 = (i__60551 + (1));
-i__60551 = G__60607;
+var G__59587 = (i__59491 + (1));
+i__59491 = G__59587;
 continue;
 } else {
 return true;
@@ -109,33 +106,33 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__60552),enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60545_$_iter__60549(cljs.core.chunk_rest(s__60550__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__59492),enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59474_$_iter__59489(cljs.core.chunk_rest(s__59490__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__60552),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__59492),null);
 }
 } else {
-var row_index__$1 = cljs.core.first(s__60550__$2);
-return cljs.core.cons(new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),cljs.core.vec((function (){var iter__5520__auto__ = ((function (i__60547,i__60539,row_index__$1,s__60550__$2,temp__5804__auto____$2,column_index,c__5518__auto____$1,size__5519__auto____$1,b__60548,s__60546__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__60540,s__60538__$2,temp__5804__auto__){
-return (function enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60545_$_iter__60549_$_iter__60557(s__60558){
-return (new cljs.core.LazySeq(null,((function (i__60547,i__60539,row_index__$1,s__60550__$2,temp__5804__auto____$2,column_index,c__5518__auto____$1,size__5519__auto____$1,b__60548,s__60546__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__60540,s__60538__$2,temp__5804__auto__){
+var row_index__$1 = cljs.core.first(s__59490__$2);
+return cljs.core.cons(new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),cljs.core.vec((function (){var iter__5520__auto__ = ((function (i__59476,i__59470,row_index__$1,s__59490__$2,temp__5804__auto____$2,column_index,c__5518__auto____$1,size__5519__auto____$1,b__59477,s__59475__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__59471,s__59469__$2,temp__5804__auto__){
+return (function enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59474_$_iter__59489_$_iter__59511(s__59512){
+return (new cljs.core.LazySeq(null,((function (i__59476,i__59470,row_index__$1,s__59490__$2,temp__5804__auto____$2,column_index,c__5518__auto____$1,size__5519__auto____$1,b__59477,s__59475__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__59471,s__59469__$2,temp__5804__auto__){
 return (function (){
-var s__60558__$1 = s__60558;
+var s__59512__$1 = s__59512;
 while(true){
-var temp__5804__auto____$3 = cljs.core.seq(s__60558__$1);
+var temp__5804__auto____$3 = cljs.core.seq(s__59512__$1);
 if(temp__5804__auto____$3){
-var s__60558__$2 = temp__5804__auto____$3;
-if(cljs.core.chunked_seq_QMARK_(s__60558__$2)){
-var c__5518__auto____$2 = cljs.core.chunk_first(s__60558__$2);
+var s__59512__$2 = temp__5804__auto____$3;
+if(cljs.core.chunked_seq_QMARK_(s__59512__$2)){
+var c__5518__auto____$2 = cljs.core.chunk_first(s__59512__$2);
 var size__5519__auto____$2 = cljs.core.count(c__5518__auto____$2);
-var b__60560 = cljs.core.chunk_buffer(size__5519__auto____$2);
-if((function (){var i__60559 = (0);
+var b__59514 = cljs.core.chunk_buffer(size__5519__auto____$2);
+if((function (){var i__59513 = (0);
 while(true){
-if((i__60559 < size__5519__auto____$2)){
-var column_index__$1 = cljs.core._nth(c__5518__auto____$2,i__60559);
-cljs.core.chunk_append(b__60560,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null));
+if((i__59513 < size__5519__auto____$2)){
+var column_index__$1 = cljs.core._nth(c__5518__auto____$2,i__59513);
+cljs.core.chunk_append(b__59514,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null));
 
-var G__60611 = (i__60559 + (1));
-i__60559 = G__60611;
+var G__59588 = (i__59513 + (1));
+i__59513 = G__59588;
 continue;
 } else {
 return true;
@@ -143,41 +140,41 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__60560),enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60545_$_iter__60549_$_iter__60557(cljs.core.chunk_rest(s__60558__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__59514),enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59474_$_iter__59489_$_iter__59511(cljs.core.chunk_rest(s__59512__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__60560),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__59514),null);
 }
 } else {
-var column_index__$1 = cljs.core.first(s__60558__$2);
-return cljs.core.cons(new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null),enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60545_$_iter__60549_$_iter__60557(cljs.core.rest(s__60558__$2)));
+var column_index__$1 = cljs.core.first(s__59512__$2);
+return cljs.core.cons(new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null),enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59474_$_iter__59489_$_iter__59511(cljs.core.rest(s__59512__$2)));
 }
 } else {
 return null;
 }
 break;
 }
-});})(i__60547,i__60539,row_index__$1,s__60550__$2,temp__5804__auto____$2,column_index,c__5518__auto____$1,size__5519__auto____$1,b__60548,s__60546__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__60540,s__60538__$2,temp__5804__auto__))
+});})(i__59476,i__59470,row_index__$1,s__59490__$2,temp__5804__auto____$2,column_index,c__5518__auto____$1,size__5519__auto____$1,b__59477,s__59475__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__59471,s__59469__$2,temp__5804__auto__))
 ,null,null));
-});})(i__60547,i__60539,row_index__$1,s__60550__$2,temp__5804__auto____$2,column_index,c__5518__auto____$1,size__5519__auto____$1,b__60548,s__60546__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__60540,s__60538__$2,temp__5804__auto__))
+});})(i__59476,i__59470,row_index__$1,s__59490__$2,temp__5804__auto____$2,column_index,c__5518__auto____$1,size__5519__auto____$1,b__59477,s__59475__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__59471,s__59469__$2,temp__5804__auto__))
 ;
 return iter__5520__auto__(cljs.core.range.cljs$core$IFn$_invoke$arity$1((5)));
-})())], null),enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60545_$_iter__60549(cljs.core.rest(s__60550__$2)));
+})())], null),enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59474_$_iter__59489(cljs.core.rest(s__59490__$2)));
 }
 } else {
 return null;
 }
 break;
 }
-});})(i__60547,i__60539,column_index,c__5518__auto____$1,size__5519__auto____$1,b__60548,s__60546__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__60540,s__60538__$2,temp__5804__auto__))
+});})(i__59476,i__59470,column_index,c__5518__auto____$1,size__5519__auto____$1,b__59477,s__59475__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__59471,s__59469__$2,temp__5804__auto__))
 ,null,null));
-});})(i__60547,i__60539,column_index,c__5518__auto____$1,size__5519__auto____$1,b__60548,s__60546__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__60540,s__60538__$2,temp__5804__auto__))
+});})(i__59476,i__59470,column_index,c__5518__auto____$1,size__5519__auto____$1,b__59477,s__59475__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__59471,s__59469__$2,temp__5804__auto__))
 ;
 return iter__5520__auto__(cljs.core.range.cljs$core$IFn$_invoke$arity$1((5)));
 })())], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null):new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"content","content",15833224),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"expanded","expanded",-3020742),false,new cljs.core.Keyword(null,"rows","rows",850049680),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select_header,enigma_nexus.table.skins.expand_collapse], null),new cljs.core.Keyword(null,"content","content",15833224),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null)], null)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select_option], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"content","content",15833224),"B"], null)], null)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select_option], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"content","content",15833224),"C"], null)], null)], null)], null)], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null)
 ))))], 0)));
 
-var G__60612 = (i__60547 + (1));
-i__60547 = G__60612;
+var G__59589 = (i__59476 + (1));
+i__59476 = G__59589;
 continue;
 } else {
 return true;
@@ -185,50 +182,50 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__60548),enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60545(cljs.core.chunk_rest(s__60546__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__59477),enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59474(cljs.core.chunk_rest(s__59475__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__60548),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__59477),null);
 }
 } else {
-var column_index = cljs.core.first(s__60546__$2);
-return cljs.core.cons(cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null], null),((((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(row_index,(0))) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(column_index,(0)))))?new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.column_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.expand_collapse], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null):((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(column_index,(0)))?new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.row_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null):((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(row_index,(0)))?new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.column_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null):((((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(row_index,(1))) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(column_index,(1)))))?new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.table_in_table,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"content","content",15833224),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"expanded","expanded",-3020742),true,new cljs.core.Keyword(null,"rows","rows",850049680),cljs.core.vec((function (){var iter__5520__auto__ = ((function (i__60539,column_index,s__60546__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__60540,s__60538__$2,temp__5804__auto__){
-return (function enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60545_$_iter__60562(s__60563){
-return (new cljs.core.LazySeq(null,((function (i__60539,column_index,s__60546__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__60540,s__60538__$2,temp__5804__auto__){
+var column_index = cljs.core.first(s__59475__$2);
+return cljs.core.cons(cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null], null),((((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(row_index,(0))) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(column_index,(0)))))?new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.column_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.expand_collapse], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null):((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(column_index,(0)))?new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.row_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null):((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(row_index,(0)))?new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.column_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null):((((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(row_index,(1))) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(column_index,(1)))))?new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.table_in_table,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"content","content",15833224),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"expanded","expanded",-3020742),true,new cljs.core.Keyword(null,"rows","rows",850049680),cljs.core.vec((function (){var iter__5520__auto__ = ((function (i__59470,column_index,s__59475__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__59471,s__59469__$2,temp__5804__auto__){
+return (function enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59474_$_iter__59521(s__59522){
+return (new cljs.core.LazySeq(null,((function (i__59470,column_index,s__59475__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__59471,s__59469__$2,temp__5804__auto__){
 return (function (){
-var s__60563__$1 = s__60563;
+var s__59522__$1 = s__59522;
 while(true){
-var temp__5804__auto____$2 = cljs.core.seq(s__60563__$1);
+var temp__5804__auto____$2 = cljs.core.seq(s__59522__$1);
 if(temp__5804__auto____$2){
-var s__60563__$2 = temp__5804__auto____$2;
-if(cljs.core.chunked_seq_QMARK_(s__60563__$2)){
-var c__5518__auto____$1 = cljs.core.chunk_first(s__60563__$2);
+var s__59522__$2 = temp__5804__auto____$2;
+if(cljs.core.chunked_seq_QMARK_(s__59522__$2)){
+var c__5518__auto____$1 = cljs.core.chunk_first(s__59522__$2);
 var size__5519__auto____$1 = cljs.core.count(c__5518__auto____$1);
-var b__60565 = cljs.core.chunk_buffer(size__5519__auto____$1);
-if((function (){var i__60564 = (0);
+var b__59524 = cljs.core.chunk_buffer(size__5519__auto____$1);
+if((function (){var i__59523 = (0);
 while(true){
-if((i__60564 < size__5519__auto____$1)){
-var row_index__$1 = cljs.core._nth(c__5518__auto____$1,i__60564);
-cljs.core.chunk_append(b__60565,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),cljs.core.vec((function (){var iter__5520__auto__ = ((function (i__60564,i__60539,row_index__$1,c__5518__auto____$1,size__5519__auto____$1,b__60565,s__60563__$2,temp__5804__auto____$2,column_index,s__60546__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__60540,s__60538__$2,temp__5804__auto__){
-return (function enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60545_$_iter__60562_$_iter__60566(s__60567){
-return (new cljs.core.LazySeq(null,((function (i__60564,i__60539,row_index__$1,c__5518__auto____$1,size__5519__auto____$1,b__60565,s__60563__$2,temp__5804__auto____$2,column_index,s__60546__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__60540,s__60538__$2,temp__5804__auto__){
+if((i__59523 < size__5519__auto____$1)){
+var row_index__$1 = cljs.core._nth(c__5518__auto____$1,i__59523);
+cljs.core.chunk_append(b__59524,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),cljs.core.vec((function (){var iter__5520__auto__ = ((function (i__59523,i__59470,row_index__$1,c__5518__auto____$1,size__5519__auto____$1,b__59524,s__59522__$2,temp__5804__auto____$2,column_index,s__59475__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__59471,s__59469__$2,temp__5804__auto__){
+return (function enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59474_$_iter__59521_$_iter__59525(s__59526){
+return (new cljs.core.LazySeq(null,((function (i__59523,i__59470,row_index__$1,c__5518__auto____$1,size__5519__auto____$1,b__59524,s__59522__$2,temp__5804__auto____$2,column_index,s__59475__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__59471,s__59469__$2,temp__5804__auto__){
 return (function (){
-var s__60567__$1 = s__60567;
+var s__59526__$1 = s__59526;
 while(true){
-var temp__5804__auto____$3 = cljs.core.seq(s__60567__$1);
+var temp__5804__auto____$3 = cljs.core.seq(s__59526__$1);
 if(temp__5804__auto____$3){
-var s__60567__$2 = temp__5804__auto____$3;
-if(cljs.core.chunked_seq_QMARK_(s__60567__$2)){
-var c__5518__auto____$2 = cljs.core.chunk_first(s__60567__$2);
+var s__59526__$2 = temp__5804__auto____$3;
+if(cljs.core.chunked_seq_QMARK_(s__59526__$2)){
+var c__5518__auto____$2 = cljs.core.chunk_first(s__59526__$2);
 var size__5519__auto____$2 = cljs.core.count(c__5518__auto____$2);
-var b__60569 = cljs.core.chunk_buffer(size__5519__auto____$2);
-if((function (){var i__60568 = (0);
+var b__59528 = cljs.core.chunk_buffer(size__5519__auto____$2);
+if((function (){var i__59527 = (0);
 while(true){
-if((i__60568 < size__5519__auto____$2)){
-var column_index__$1 = cljs.core._nth(c__5518__auto____$2,i__60568);
-cljs.core.chunk_append(b__60569,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null));
+if((i__59527 < size__5519__auto____$2)){
+var column_index__$1 = cljs.core._nth(c__5518__auto____$2,i__59527);
+cljs.core.chunk_append(b__59528,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null));
 
-var G__60614 = (i__60568 + (1));
-i__60568 = G__60614;
+var G__59590 = (i__59527 + (1));
+i__59527 = G__59590;
 continue;
 } else {
 return true;
@@ -236,28 +233,28 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__60569),enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60545_$_iter__60562_$_iter__60566(cljs.core.chunk_rest(s__60567__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__59528),enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59474_$_iter__59521_$_iter__59525(cljs.core.chunk_rest(s__59526__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__60569),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__59528),null);
 }
 } else {
-var column_index__$1 = cljs.core.first(s__60567__$2);
-return cljs.core.cons(new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null),enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60545_$_iter__60562_$_iter__60566(cljs.core.rest(s__60567__$2)));
+var column_index__$1 = cljs.core.first(s__59526__$2);
+return cljs.core.cons(new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null),enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59474_$_iter__59521_$_iter__59525(cljs.core.rest(s__59526__$2)));
 }
 } else {
 return null;
 }
 break;
 }
-});})(i__60564,i__60539,row_index__$1,c__5518__auto____$1,size__5519__auto____$1,b__60565,s__60563__$2,temp__5804__auto____$2,column_index,s__60546__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__60540,s__60538__$2,temp__5804__auto__))
+});})(i__59523,i__59470,row_index__$1,c__5518__auto____$1,size__5519__auto____$1,b__59524,s__59522__$2,temp__5804__auto____$2,column_index,s__59475__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__59471,s__59469__$2,temp__5804__auto__))
 ,null,null));
-});})(i__60564,i__60539,row_index__$1,c__5518__auto____$1,size__5519__auto____$1,b__60565,s__60563__$2,temp__5804__auto____$2,column_index,s__60546__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__60540,s__60538__$2,temp__5804__auto__))
+});})(i__59523,i__59470,row_index__$1,c__5518__auto____$1,size__5519__auto____$1,b__59524,s__59522__$2,temp__5804__auto____$2,column_index,s__59475__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__59471,s__59469__$2,temp__5804__auto__))
 ;
 return iter__5520__auto__(cljs.core.range.cljs$core$IFn$_invoke$arity$1((5)));
 })())], null));
 
-var G__60618 = (i__60564 + (1));
-i__60564 = G__60618;
+var G__59591 = (i__59523 + (1));
+i__59523 = G__59591;
 continue;
 } else {
 return true;
@@ -265,33 +262,33 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__60565),enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60545_$_iter__60562(cljs.core.chunk_rest(s__60563__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__59524),enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59474_$_iter__59521(cljs.core.chunk_rest(s__59522__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__60565),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__59524),null);
 }
 } else {
-var row_index__$1 = cljs.core.first(s__60563__$2);
-return cljs.core.cons(new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),cljs.core.vec((function (){var iter__5520__auto__ = ((function (i__60539,row_index__$1,s__60563__$2,temp__5804__auto____$2,column_index,s__60546__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__60540,s__60538__$2,temp__5804__auto__){
-return (function enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60545_$_iter__60562_$_iter__60570(s__60571){
-return (new cljs.core.LazySeq(null,((function (i__60539,row_index__$1,s__60563__$2,temp__5804__auto____$2,column_index,s__60546__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__60540,s__60538__$2,temp__5804__auto__){
+var row_index__$1 = cljs.core.first(s__59522__$2);
+return cljs.core.cons(new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),cljs.core.vec((function (){var iter__5520__auto__ = ((function (i__59470,row_index__$1,s__59522__$2,temp__5804__auto____$2,column_index,s__59475__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__59471,s__59469__$2,temp__5804__auto__){
+return (function enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59474_$_iter__59521_$_iter__59535(s__59536){
+return (new cljs.core.LazySeq(null,((function (i__59470,row_index__$1,s__59522__$2,temp__5804__auto____$2,column_index,s__59475__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__59471,s__59469__$2,temp__5804__auto__){
 return (function (){
-var s__60571__$1 = s__60571;
+var s__59536__$1 = s__59536;
 while(true){
-var temp__5804__auto____$3 = cljs.core.seq(s__60571__$1);
+var temp__5804__auto____$3 = cljs.core.seq(s__59536__$1);
 if(temp__5804__auto____$3){
-var s__60571__$2 = temp__5804__auto____$3;
-if(cljs.core.chunked_seq_QMARK_(s__60571__$2)){
-var c__5518__auto____$1 = cljs.core.chunk_first(s__60571__$2);
+var s__59536__$2 = temp__5804__auto____$3;
+if(cljs.core.chunked_seq_QMARK_(s__59536__$2)){
+var c__5518__auto____$1 = cljs.core.chunk_first(s__59536__$2);
 var size__5519__auto____$1 = cljs.core.count(c__5518__auto____$1);
-var b__60573 = cljs.core.chunk_buffer(size__5519__auto____$1);
-if((function (){var i__60572 = (0);
+var b__59538 = cljs.core.chunk_buffer(size__5519__auto____$1);
+if((function (){var i__59537 = (0);
 while(true){
-if((i__60572 < size__5519__auto____$1)){
-var column_index__$1 = cljs.core._nth(c__5518__auto____$1,i__60572);
-cljs.core.chunk_append(b__60573,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null));
+if((i__59537 < size__5519__auto____$1)){
+var column_index__$1 = cljs.core._nth(c__5518__auto____$1,i__59537);
+cljs.core.chunk_append(b__59538,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null));
 
-var G__60619 = (i__60572 + (1));
-i__60572 = G__60619;
+var G__59592 = (i__59537 + (1));
+i__59537 = G__59592;
 continue;
 } else {
 return true;
@@ -299,53 +296,53 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__60573),enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60545_$_iter__60562_$_iter__60570(cljs.core.chunk_rest(s__60571__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__59538),enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59474_$_iter__59521_$_iter__59535(cljs.core.chunk_rest(s__59536__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__60573),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__59538),null);
 }
 } else {
-var column_index__$1 = cljs.core.first(s__60571__$2);
-return cljs.core.cons(new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null),enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60545_$_iter__60562_$_iter__60570(cljs.core.rest(s__60571__$2)));
+var column_index__$1 = cljs.core.first(s__59536__$2);
+return cljs.core.cons(new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null),enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59474_$_iter__59521_$_iter__59535(cljs.core.rest(s__59536__$2)));
 }
 } else {
 return null;
 }
 break;
 }
-});})(i__60539,row_index__$1,s__60563__$2,temp__5804__auto____$2,column_index,s__60546__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__60540,s__60538__$2,temp__5804__auto__))
+});})(i__59470,row_index__$1,s__59522__$2,temp__5804__auto____$2,column_index,s__59475__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__59471,s__59469__$2,temp__5804__auto__))
 ,null,null));
-});})(i__60539,row_index__$1,s__60563__$2,temp__5804__auto____$2,column_index,s__60546__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__60540,s__60538__$2,temp__5804__auto__))
+});})(i__59470,row_index__$1,s__59522__$2,temp__5804__auto____$2,column_index,s__59475__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__59471,s__59469__$2,temp__5804__auto__))
 ;
 return iter__5520__auto__(cljs.core.range.cljs$core$IFn$_invoke$arity$1((5)));
-})())], null),enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60545_$_iter__60562(cljs.core.rest(s__60563__$2)));
+})())], null),enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59474_$_iter__59521(cljs.core.rest(s__59522__$2)));
 }
 } else {
 return null;
 }
 break;
 }
-});})(i__60539,column_index,s__60546__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__60540,s__60538__$2,temp__5804__auto__))
+});})(i__59470,column_index,s__59475__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__59471,s__59469__$2,temp__5804__auto__))
 ,null,null));
-});})(i__60539,column_index,s__60546__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__60540,s__60538__$2,temp__5804__auto__))
+});})(i__59470,column_index,s__59475__$2,temp__5804__auto____$1,row_index,c__5518__auto__,size__5519__auto__,b__59471,s__59469__$2,temp__5804__auto__))
 ;
 return iter__5520__auto__(cljs.core.range.cljs$core$IFn$_invoke$arity$1((5)));
 })())], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null):new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"content","content",15833224),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"expanded","expanded",-3020742),false,new cljs.core.Keyword(null,"rows","rows",850049680),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select_header,enigma_nexus.table.skins.expand_collapse], null),new cljs.core.Keyword(null,"content","content",15833224),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null)], null)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select_option], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"content","content",15833224),"B"], null)], null)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select_option], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"content","content",15833224),"C"], null)], null)], null)], null)], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null)
-))))], 0)),enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60545(cljs.core.rest(s__60546__$2)));
+))))], 0)),enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59474(cljs.core.rest(s__59475__$2)));
 }
 } else {
 return null;
 }
 break;
 }
-});})(i__60539,row_index,c__5518__auto__,size__5519__auto__,b__60540,s__60538__$2,temp__5804__auto__))
+});})(i__59470,row_index,c__5518__auto__,size__5519__auto__,b__59471,s__59469__$2,temp__5804__auto__))
 ,null,null));
-});})(i__60539,row_index,c__5518__auto__,size__5519__auto__,b__60540,s__60538__$2,temp__5804__auto__))
+});})(i__59470,row_index,c__5518__auto__,size__5519__auto__,b__59471,s__59469__$2,temp__5804__auto__))
 ;
 return iter__5520__auto__(cljs.core.range.cljs$core$IFn$_invoke$arity$1(column_count));
 })())], null));
 
-var G__60621 = (i__60539 + (1));
-i__60539 = G__60621;
+var G__59593 = (i__59470 + (1));
+i__59470 = G__59593;
 continue;
 } else {
 return true;
@@ -353,66 +350,66 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__60540),enigma_nexus$tabs$state$empty_tab_$_iter__60537(cljs.core.chunk_rest(s__60538__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__59471),enigma_nexus$tabs$state$add_new_tab_$_iter__59468(cljs.core.chunk_rest(s__59469__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__60540),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__59471),null);
 }
 } else {
-var row_index = cljs.core.first(s__60538__$2);
-return cljs.core.cons(new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),cljs.core.vec((function (){var iter__5520__auto__ = ((function (row_index,s__60538__$2,temp__5804__auto__){
-return (function enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60574(s__60575){
+var row_index = cljs.core.first(s__59469__$2);
+return cljs.core.cons(new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),cljs.core.vec((function (){var iter__5520__auto__ = ((function (row_index,s__59469__$2,temp__5804__auto__){
+return (function enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59550(s__59551){
 return (new cljs.core.LazySeq(null,(function (){
-var s__60575__$1 = s__60575;
+var s__59551__$1 = s__59551;
 while(true){
-var temp__5804__auto____$1 = cljs.core.seq(s__60575__$1);
+var temp__5804__auto____$1 = cljs.core.seq(s__59551__$1);
 if(temp__5804__auto____$1){
-var s__60575__$2 = temp__5804__auto____$1;
-if(cljs.core.chunked_seq_QMARK_(s__60575__$2)){
-var c__5518__auto__ = cljs.core.chunk_first(s__60575__$2);
+var s__59551__$2 = temp__5804__auto____$1;
+if(cljs.core.chunked_seq_QMARK_(s__59551__$2)){
+var c__5518__auto__ = cljs.core.chunk_first(s__59551__$2);
 var size__5519__auto__ = cljs.core.count(c__5518__auto__);
-var b__60577 = cljs.core.chunk_buffer(size__5519__auto__);
-if((function (){var i__60576 = (0);
+var b__59553 = cljs.core.chunk_buffer(size__5519__auto__);
+if((function (){var i__59552 = (0);
 while(true){
-if((i__60576 < size__5519__auto__)){
-var column_index = cljs.core._nth(c__5518__auto__,i__60576);
-cljs.core.chunk_append(b__60577,cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null], null),((((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(row_index,(0))) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(column_index,(0)))))?new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.column_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.expand_collapse], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null):((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(column_index,(0)))?new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.row_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null):((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(row_index,(0)))?new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.column_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null):((((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(row_index,(1))) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(column_index,(1)))))?new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.table_in_table,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"content","content",15833224),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"expanded","expanded",-3020742),true,new cljs.core.Keyword(null,"rows","rows",850049680),cljs.core.vec((function (){var iter__5520__auto__ = ((function (i__60576,column_index,c__5518__auto__,size__5519__auto__,b__60577,s__60575__$2,temp__5804__auto____$1,row_index,s__60538__$2,temp__5804__auto__){
-return (function enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60574_$_iter__60578(s__60579){
-return (new cljs.core.LazySeq(null,((function (i__60576,column_index,c__5518__auto__,size__5519__auto__,b__60577,s__60575__$2,temp__5804__auto____$1,row_index,s__60538__$2,temp__5804__auto__){
+if((i__59552 < size__5519__auto__)){
+var column_index = cljs.core._nth(c__5518__auto__,i__59552);
+cljs.core.chunk_append(b__59553,cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null], null),((((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(row_index,(0))) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(column_index,(0)))))?new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.column_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.expand_collapse], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null):((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(column_index,(0)))?new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.row_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null):((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(row_index,(0)))?new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.column_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null):((((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(row_index,(1))) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(column_index,(1)))))?new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.table_in_table,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"content","content",15833224),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"expanded","expanded",-3020742),true,new cljs.core.Keyword(null,"rows","rows",850049680),cljs.core.vec((function (){var iter__5520__auto__ = ((function (i__59552,column_index,c__5518__auto__,size__5519__auto__,b__59553,s__59551__$2,temp__5804__auto____$1,row_index,s__59469__$2,temp__5804__auto__){
+return (function enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59550_$_iter__59558(s__59559){
+return (new cljs.core.LazySeq(null,((function (i__59552,column_index,c__5518__auto__,size__5519__auto__,b__59553,s__59551__$2,temp__5804__auto____$1,row_index,s__59469__$2,temp__5804__auto__){
 return (function (){
-var s__60579__$1 = s__60579;
+var s__59559__$1 = s__59559;
 while(true){
-var temp__5804__auto____$2 = cljs.core.seq(s__60579__$1);
+var temp__5804__auto____$2 = cljs.core.seq(s__59559__$1);
 if(temp__5804__auto____$2){
-var s__60579__$2 = temp__5804__auto____$2;
-if(cljs.core.chunked_seq_QMARK_(s__60579__$2)){
-var c__5518__auto____$1 = cljs.core.chunk_first(s__60579__$2);
+var s__59559__$2 = temp__5804__auto____$2;
+if(cljs.core.chunked_seq_QMARK_(s__59559__$2)){
+var c__5518__auto____$1 = cljs.core.chunk_first(s__59559__$2);
 var size__5519__auto____$1 = cljs.core.count(c__5518__auto____$1);
-var b__60581 = cljs.core.chunk_buffer(size__5519__auto____$1);
-if((function (){var i__60580 = (0);
+var b__59561 = cljs.core.chunk_buffer(size__5519__auto____$1);
+if((function (){var i__59560 = (0);
 while(true){
-if((i__60580 < size__5519__auto____$1)){
-var row_index__$1 = cljs.core._nth(c__5518__auto____$1,i__60580);
-cljs.core.chunk_append(b__60581,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),cljs.core.vec((function (){var iter__5520__auto__ = ((function (i__60580,i__60576,row_index__$1,c__5518__auto____$1,size__5519__auto____$1,b__60581,s__60579__$2,temp__5804__auto____$2,column_index,c__5518__auto__,size__5519__auto__,b__60577,s__60575__$2,temp__5804__auto____$1,row_index,s__60538__$2,temp__5804__auto__){
-return (function enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60574_$_iter__60578_$_iter__60582(s__60583){
-return (new cljs.core.LazySeq(null,((function (i__60580,i__60576,row_index__$1,c__5518__auto____$1,size__5519__auto____$1,b__60581,s__60579__$2,temp__5804__auto____$2,column_index,c__5518__auto__,size__5519__auto__,b__60577,s__60575__$2,temp__5804__auto____$1,row_index,s__60538__$2,temp__5804__auto__){
+if((i__59560 < size__5519__auto____$1)){
+var row_index__$1 = cljs.core._nth(c__5518__auto____$1,i__59560);
+cljs.core.chunk_append(b__59561,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),cljs.core.vec((function (){var iter__5520__auto__ = ((function (i__59560,i__59552,row_index__$1,c__5518__auto____$1,size__5519__auto____$1,b__59561,s__59559__$2,temp__5804__auto____$2,column_index,c__5518__auto__,size__5519__auto__,b__59553,s__59551__$2,temp__5804__auto____$1,row_index,s__59469__$2,temp__5804__auto__){
+return (function enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59550_$_iter__59558_$_iter__59562(s__59563){
+return (new cljs.core.LazySeq(null,((function (i__59560,i__59552,row_index__$1,c__5518__auto____$1,size__5519__auto____$1,b__59561,s__59559__$2,temp__5804__auto____$2,column_index,c__5518__auto__,size__5519__auto__,b__59553,s__59551__$2,temp__5804__auto____$1,row_index,s__59469__$2,temp__5804__auto__){
 return (function (){
-var s__60583__$1 = s__60583;
+var s__59563__$1 = s__59563;
 while(true){
-var temp__5804__auto____$3 = cljs.core.seq(s__60583__$1);
+var temp__5804__auto____$3 = cljs.core.seq(s__59563__$1);
 if(temp__5804__auto____$3){
-var s__60583__$2 = temp__5804__auto____$3;
-if(cljs.core.chunked_seq_QMARK_(s__60583__$2)){
-var c__5518__auto____$2 = cljs.core.chunk_first(s__60583__$2);
+var s__59563__$2 = temp__5804__auto____$3;
+if(cljs.core.chunked_seq_QMARK_(s__59563__$2)){
+var c__5518__auto____$2 = cljs.core.chunk_first(s__59563__$2);
 var size__5519__auto____$2 = cljs.core.count(c__5518__auto____$2);
-var b__60585 = cljs.core.chunk_buffer(size__5519__auto____$2);
-if((function (){var i__60584 = (0);
+var b__59565 = cljs.core.chunk_buffer(size__5519__auto____$2);
+if((function (){var i__59564 = (0);
 while(true){
-if((i__60584 < size__5519__auto____$2)){
-var column_index__$1 = cljs.core._nth(c__5518__auto____$2,i__60584);
-cljs.core.chunk_append(b__60585,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null));
+if((i__59564 < size__5519__auto____$2)){
+var column_index__$1 = cljs.core._nth(c__5518__auto____$2,i__59564);
+cljs.core.chunk_append(b__59565,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null));
 
-var G__60625 = (i__60584 + (1));
-i__60584 = G__60625;
+var G__59594 = (i__59564 + (1));
+i__59564 = G__59594;
 continue;
 } else {
 return true;
@@ -420,28 +417,28 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__60585),enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60574_$_iter__60578_$_iter__60582(cljs.core.chunk_rest(s__60583__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__59565),enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59550_$_iter__59558_$_iter__59562(cljs.core.chunk_rest(s__59563__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__60585),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__59565),null);
 }
 } else {
-var column_index__$1 = cljs.core.first(s__60583__$2);
-return cljs.core.cons(new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null),enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60574_$_iter__60578_$_iter__60582(cljs.core.rest(s__60583__$2)));
+var column_index__$1 = cljs.core.first(s__59563__$2);
+return cljs.core.cons(new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null),enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59550_$_iter__59558_$_iter__59562(cljs.core.rest(s__59563__$2)));
 }
 } else {
 return null;
 }
 break;
 }
-});})(i__60580,i__60576,row_index__$1,c__5518__auto____$1,size__5519__auto____$1,b__60581,s__60579__$2,temp__5804__auto____$2,column_index,c__5518__auto__,size__5519__auto__,b__60577,s__60575__$2,temp__5804__auto____$1,row_index,s__60538__$2,temp__5804__auto__))
+});})(i__59560,i__59552,row_index__$1,c__5518__auto____$1,size__5519__auto____$1,b__59561,s__59559__$2,temp__5804__auto____$2,column_index,c__5518__auto__,size__5519__auto__,b__59553,s__59551__$2,temp__5804__auto____$1,row_index,s__59469__$2,temp__5804__auto__))
 ,null,null));
-});})(i__60580,i__60576,row_index__$1,c__5518__auto____$1,size__5519__auto____$1,b__60581,s__60579__$2,temp__5804__auto____$2,column_index,c__5518__auto__,size__5519__auto__,b__60577,s__60575__$2,temp__5804__auto____$1,row_index,s__60538__$2,temp__5804__auto__))
+});})(i__59560,i__59552,row_index__$1,c__5518__auto____$1,size__5519__auto____$1,b__59561,s__59559__$2,temp__5804__auto____$2,column_index,c__5518__auto__,size__5519__auto__,b__59553,s__59551__$2,temp__5804__auto____$1,row_index,s__59469__$2,temp__5804__auto__))
 ;
 return iter__5520__auto__(cljs.core.range.cljs$core$IFn$_invoke$arity$1((5)));
 })())], null));
 
-var G__60626 = (i__60580 + (1));
-i__60580 = G__60626;
+var G__59595 = (i__59560 + (1));
+i__59560 = G__59595;
 continue;
 } else {
 return true;
@@ -449,33 +446,33 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__60581),enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60574_$_iter__60578(cljs.core.chunk_rest(s__60579__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__59561),enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59550_$_iter__59558(cljs.core.chunk_rest(s__59559__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__60581),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__59561),null);
 }
 } else {
-var row_index__$1 = cljs.core.first(s__60579__$2);
-return cljs.core.cons(new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),cljs.core.vec((function (){var iter__5520__auto__ = ((function (i__60576,row_index__$1,s__60579__$2,temp__5804__auto____$2,column_index,c__5518__auto__,size__5519__auto__,b__60577,s__60575__$2,temp__5804__auto____$1,row_index,s__60538__$2,temp__5804__auto__){
-return (function enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60574_$_iter__60578_$_iter__60586(s__60587){
-return (new cljs.core.LazySeq(null,((function (i__60576,row_index__$1,s__60579__$2,temp__5804__auto____$2,column_index,c__5518__auto__,size__5519__auto__,b__60577,s__60575__$2,temp__5804__auto____$1,row_index,s__60538__$2,temp__5804__auto__){
+var row_index__$1 = cljs.core.first(s__59559__$2);
+return cljs.core.cons(new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),cljs.core.vec((function (){var iter__5520__auto__ = ((function (i__59552,row_index__$1,s__59559__$2,temp__5804__auto____$2,column_index,c__5518__auto__,size__5519__auto__,b__59553,s__59551__$2,temp__5804__auto____$1,row_index,s__59469__$2,temp__5804__auto__){
+return (function enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59550_$_iter__59558_$_iter__59570(s__59571){
+return (new cljs.core.LazySeq(null,((function (i__59552,row_index__$1,s__59559__$2,temp__5804__auto____$2,column_index,c__5518__auto__,size__5519__auto__,b__59553,s__59551__$2,temp__5804__auto____$1,row_index,s__59469__$2,temp__5804__auto__){
 return (function (){
-var s__60587__$1 = s__60587;
+var s__59571__$1 = s__59571;
 while(true){
-var temp__5804__auto____$3 = cljs.core.seq(s__60587__$1);
+var temp__5804__auto____$3 = cljs.core.seq(s__59571__$1);
 if(temp__5804__auto____$3){
-var s__60587__$2 = temp__5804__auto____$3;
-if(cljs.core.chunked_seq_QMARK_(s__60587__$2)){
-var c__5518__auto____$1 = cljs.core.chunk_first(s__60587__$2);
+var s__59571__$2 = temp__5804__auto____$3;
+if(cljs.core.chunked_seq_QMARK_(s__59571__$2)){
+var c__5518__auto____$1 = cljs.core.chunk_first(s__59571__$2);
 var size__5519__auto____$1 = cljs.core.count(c__5518__auto____$1);
-var b__60589 = cljs.core.chunk_buffer(size__5519__auto____$1);
-if((function (){var i__60588 = (0);
+var b__59573 = cljs.core.chunk_buffer(size__5519__auto____$1);
+if((function (){var i__59572 = (0);
 while(true){
-if((i__60588 < size__5519__auto____$1)){
-var column_index__$1 = cljs.core._nth(c__5518__auto____$1,i__60588);
-cljs.core.chunk_append(b__60589,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null));
+if((i__59572 < size__5519__auto____$1)){
+var column_index__$1 = cljs.core._nth(c__5518__auto____$1,i__59572);
+cljs.core.chunk_append(b__59573,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null));
 
-var G__60631 = (i__60588 + (1));
-i__60588 = G__60631;
+var G__59596 = (i__59572 + (1));
+i__59572 = G__59596;
 continue;
 } else {
 return true;
@@ -483,41 +480,41 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__60589),enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60574_$_iter__60578_$_iter__60586(cljs.core.chunk_rest(s__60587__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__59573),enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59550_$_iter__59558_$_iter__59570(cljs.core.chunk_rest(s__59571__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__60589),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__59573),null);
 }
 } else {
-var column_index__$1 = cljs.core.first(s__60587__$2);
-return cljs.core.cons(new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null),enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60574_$_iter__60578_$_iter__60586(cljs.core.rest(s__60587__$2)));
+var column_index__$1 = cljs.core.first(s__59571__$2);
+return cljs.core.cons(new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null),enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59550_$_iter__59558_$_iter__59570(cljs.core.rest(s__59571__$2)));
 }
 } else {
 return null;
 }
 break;
 }
-});})(i__60576,row_index__$1,s__60579__$2,temp__5804__auto____$2,column_index,c__5518__auto__,size__5519__auto__,b__60577,s__60575__$2,temp__5804__auto____$1,row_index,s__60538__$2,temp__5804__auto__))
+});})(i__59552,row_index__$1,s__59559__$2,temp__5804__auto____$2,column_index,c__5518__auto__,size__5519__auto__,b__59553,s__59551__$2,temp__5804__auto____$1,row_index,s__59469__$2,temp__5804__auto__))
 ,null,null));
-});})(i__60576,row_index__$1,s__60579__$2,temp__5804__auto____$2,column_index,c__5518__auto__,size__5519__auto__,b__60577,s__60575__$2,temp__5804__auto____$1,row_index,s__60538__$2,temp__5804__auto__))
+});})(i__59552,row_index__$1,s__59559__$2,temp__5804__auto____$2,column_index,c__5518__auto__,size__5519__auto__,b__59553,s__59551__$2,temp__5804__auto____$1,row_index,s__59469__$2,temp__5804__auto__))
 ;
 return iter__5520__auto__(cljs.core.range.cljs$core$IFn$_invoke$arity$1((5)));
-})())], null),enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60574_$_iter__60578(cljs.core.rest(s__60579__$2)));
+})())], null),enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59550_$_iter__59558(cljs.core.rest(s__59559__$2)));
 }
 } else {
 return null;
 }
 break;
 }
-});})(i__60576,column_index,c__5518__auto__,size__5519__auto__,b__60577,s__60575__$2,temp__5804__auto____$1,row_index,s__60538__$2,temp__5804__auto__))
+});})(i__59552,column_index,c__5518__auto__,size__5519__auto__,b__59553,s__59551__$2,temp__5804__auto____$1,row_index,s__59469__$2,temp__5804__auto__))
 ,null,null));
-});})(i__60576,column_index,c__5518__auto__,size__5519__auto__,b__60577,s__60575__$2,temp__5804__auto____$1,row_index,s__60538__$2,temp__5804__auto__))
+});})(i__59552,column_index,c__5518__auto__,size__5519__auto__,b__59553,s__59551__$2,temp__5804__auto____$1,row_index,s__59469__$2,temp__5804__auto__))
 ;
 return iter__5520__auto__(cljs.core.range.cljs$core$IFn$_invoke$arity$1((5)));
 })())], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null):new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"content","content",15833224),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"expanded","expanded",-3020742),false,new cljs.core.Keyword(null,"rows","rows",850049680),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select_header,enigma_nexus.table.skins.expand_collapse], null),new cljs.core.Keyword(null,"content","content",15833224),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null)], null)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select_option], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"content","content",15833224),"B"], null)], null)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select_option], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"content","content",15833224),"C"], null)], null)], null)], null)], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null)
 ))))], 0)));
 
-var G__60632 = (i__60576 + (1));
-i__60576 = G__60632;
+var G__59597 = (i__59552 + (1));
+i__59552 = G__59597;
 continue;
 } else {
 return true;
@@ -525,49 +522,49 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__60577),enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60574(cljs.core.chunk_rest(s__60575__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__59553),enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59550(cljs.core.chunk_rest(s__59551__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__60577),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__59553),null);
 }
 } else {
-var column_index = cljs.core.first(s__60575__$2);
-return cljs.core.cons(cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null], null),((((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(row_index,(0))) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(column_index,(0)))))?new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.column_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.expand_collapse], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null):((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(column_index,(0)))?new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.row_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null):((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(row_index,(0)))?new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.column_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null):((((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(row_index,(1))) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(column_index,(1)))))?new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.table_in_table,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"content","content",15833224),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"expanded","expanded",-3020742),true,new cljs.core.Keyword(null,"rows","rows",850049680),cljs.core.vec((function (){var iter__5520__auto__ = ((function (column_index,s__60575__$2,temp__5804__auto____$1,row_index,s__60538__$2,temp__5804__auto__){
-return (function enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60574_$_iter__60590(s__60591){
+var column_index = cljs.core.first(s__59551__$2);
+return cljs.core.cons(cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null], null),((((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(row_index,(0))) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(column_index,(0)))))?new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.column_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.expand_collapse], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null):((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(column_index,(0)))?new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.row_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null):((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(row_index,(0)))?new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.column_menu,enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null):((((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(row_index,(1))) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(column_index,(1)))))?new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.table_in_table,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"content","content",15833224),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"expanded","expanded",-3020742),true,new cljs.core.Keyword(null,"rows","rows",850049680),cljs.core.vec((function (){var iter__5520__auto__ = ((function (column_index,s__59551__$2,temp__5804__auto____$1,row_index,s__59469__$2,temp__5804__auto__){
+return (function enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59550_$_iter__59574(s__59575){
 return (new cljs.core.LazySeq(null,(function (){
-var s__60591__$1 = s__60591;
+var s__59575__$1 = s__59575;
 while(true){
-var temp__5804__auto____$2 = cljs.core.seq(s__60591__$1);
+var temp__5804__auto____$2 = cljs.core.seq(s__59575__$1);
 if(temp__5804__auto____$2){
-var s__60591__$2 = temp__5804__auto____$2;
-if(cljs.core.chunked_seq_QMARK_(s__60591__$2)){
-var c__5518__auto__ = cljs.core.chunk_first(s__60591__$2);
+var s__59575__$2 = temp__5804__auto____$2;
+if(cljs.core.chunked_seq_QMARK_(s__59575__$2)){
+var c__5518__auto__ = cljs.core.chunk_first(s__59575__$2);
 var size__5519__auto__ = cljs.core.count(c__5518__auto__);
-var b__60593 = cljs.core.chunk_buffer(size__5519__auto__);
-if((function (){var i__60592 = (0);
+var b__59577 = cljs.core.chunk_buffer(size__5519__auto__);
+if((function (){var i__59576 = (0);
 while(true){
-if((i__60592 < size__5519__auto__)){
-var row_index__$1 = cljs.core._nth(c__5518__auto__,i__60592);
-cljs.core.chunk_append(b__60593,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),cljs.core.vec((function (){var iter__5520__auto__ = ((function (i__60592,row_index__$1,c__5518__auto__,size__5519__auto__,b__60593,s__60591__$2,temp__5804__auto____$2,column_index,s__60575__$2,temp__5804__auto____$1,row_index,s__60538__$2,temp__5804__auto__){
-return (function enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60574_$_iter__60590_$_iter__60594(s__60595){
-return (new cljs.core.LazySeq(null,((function (i__60592,row_index__$1,c__5518__auto__,size__5519__auto__,b__60593,s__60591__$2,temp__5804__auto____$2,column_index,s__60575__$2,temp__5804__auto____$1,row_index,s__60538__$2,temp__5804__auto__){
+if((i__59576 < size__5519__auto__)){
+var row_index__$1 = cljs.core._nth(c__5518__auto__,i__59576);
+cljs.core.chunk_append(b__59577,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),cljs.core.vec((function (){var iter__5520__auto__ = ((function (i__59576,row_index__$1,c__5518__auto__,size__5519__auto__,b__59577,s__59575__$2,temp__5804__auto____$2,column_index,s__59551__$2,temp__5804__auto____$1,row_index,s__59469__$2,temp__5804__auto__){
+return (function enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59550_$_iter__59574_$_iter__59578(s__59579){
+return (new cljs.core.LazySeq(null,((function (i__59576,row_index__$1,c__5518__auto__,size__5519__auto__,b__59577,s__59575__$2,temp__5804__auto____$2,column_index,s__59551__$2,temp__5804__auto____$1,row_index,s__59469__$2,temp__5804__auto__){
 return (function (){
-var s__60595__$1 = s__60595;
+var s__59579__$1 = s__59579;
 while(true){
-var temp__5804__auto____$3 = cljs.core.seq(s__60595__$1);
+var temp__5804__auto____$3 = cljs.core.seq(s__59579__$1);
 if(temp__5804__auto____$3){
-var s__60595__$2 = temp__5804__auto____$3;
-if(cljs.core.chunked_seq_QMARK_(s__60595__$2)){
-var c__5518__auto____$1 = cljs.core.chunk_first(s__60595__$2);
+var s__59579__$2 = temp__5804__auto____$3;
+if(cljs.core.chunked_seq_QMARK_(s__59579__$2)){
+var c__5518__auto____$1 = cljs.core.chunk_first(s__59579__$2);
 var size__5519__auto____$1 = cljs.core.count(c__5518__auto____$1);
-var b__60597 = cljs.core.chunk_buffer(size__5519__auto____$1);
-if((function (){var i__60596 = (0);
+var b__59581 = cljs.core.chunk_buffer(size__5519__auto____$1);
+if((function (){var i__59580 = (0);
 while(true){
-if((i__60596 < size__5519__auto____$1)){
-var column_index__$1 = cljs.core._nth(c__5518__auto____$1,i__60596);
-cljs.core.chunk_append(b__60597,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null));
+if((i__59580 < size__5519__auto____$1)){
+var column_index__$1 = cljs.core._nth(c__5518__auto____$1,i__59580);
+cljs.core.chunk_append(b__59581,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null));
 
-var G__60639 = (i__60596 + (1));
-i__60596 = G__60639;
+var G__59598 = (i__59580 + (1));
+i__59580 = G__59598;
 continue;
 } else {
 return true;
@@ -575,28 +572,28 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__60597),enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60574_$_iter__60590_$_iter__60594(cljs.core.chunk_rest(s__60595__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__59581),enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59550_$_iter__59574_$_iter__59578(cljs.core.chunk_rest(s__59579__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__60597),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__59581),null);
 }
 } else {
-var column_index__$1 = cljs.core.first(s__60595__$2);
-return cljs.core.cons(new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null),enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60574_$_iter__60590_$_iter__60594(cljs.core.rest(s__60595__$2)));
+var column_index__$1 = cljs.core.first(s__59579__$2);
+return cljs.core.cons(new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null),enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59550_$_iter__59574_$_iter__59578(cljs.core.rest(s__59579__$2)));
 }
 } else {
 return null;
 }
 break;
 }
-});})(i__60592,row_index__$1,c__5518__auto__,size__5519__auto__,b__60593,s__60591__$2,temp__5804__auto____$2,column_index,s__60575__$2,temp__5804__auto____$1,row_index,s__60538__$2,temp__5804__auto__))
+});})(i__59576,row_index__$1,c__5518__auto__,size__5519__auto__,b__59577,s__59575__$2,temp__5804__auto____$2,column_index,s__59551__$2,temp__5804__auto____$1,row_index,s__59469__$2,temp__5804__auto__))
 ,null,null));
-});})(i__60592,row_index__$1,c__5518__auto__,size__5519__auto__,b__60593,s__60591__$2,temp__5804__auto____$2,column_index,s__60575__$2,temp__5804__auto____$1,row_index,s__60538__$2,temp__5804__auto__))
+});})(i__59576,row_index__$1,c__5518__auto__,size__5519__auto__,b__59577,s__59575__$2,temp__5804__auto____$2,column_index,s__59551__$2,temp__5804__auto____$1,row_index,s__59469__$2,temp__5804__auto__))
 ;
 return iter__5520__auto__(cljs.core.range.cljs$core$IFn$_invoke$arity$1((5)));
 })())], null));
 
-var G__60640 = (i__60592 + (1));
-i__60592 = G__60640;
+var G__59599 = (i__59576 + (1));
+i__59576 = G__59599;
 continue;
 } else {
 return true;
@@ -604,32 +601,32 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__60593),enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60574_$_iter__60590(cljs.core.chunk_rest(s__60591__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__59577),enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59550_$_iter__59574(cljs.core.chunk_rest(s__59575__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__60593),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__59577),null);
 }
 } else {
-var row_index__$1 = cljs.core.first(s__60591__$2);
-return cljs.core.cons(new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),cljs.core.vec((function (){var iter__5520__auto__ = ((function (row_index__$1,s__60591__$2,temp__5804__auto____$2,column_index,s__60575__$2,temp__5804__auto____$1,row_index,s__60538__$2,temp__5804__auto__){
-return (function enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60574_$_iter__60590_$_iter__60598(s__60599){
+var row_index__$1 = cljs.core.first(s__59575__$2);
+return cljs.core.cons(new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),cljs.core.vec((function (){var iter__5520__auto__ = ((function (row_index__$1,s__59575__$2,temp__5804__auto____$2,column_index,s__59551__$2,temp__5804__auto____$1,row_index,s__59469__$2,temp__5804__auto__){
+return (function enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59550_$_iter__59574_$_iter__59582(s__59583){
 return (new cljs.core.LazySeq(null,(function (){
-var s__60599__$1 = s__60599;
+var s__59583__$1 = s__59583;
 while(true){
-var temp__5804__auto____$3 = cljs.core.seq(s__60599__$1);
+var temp__5804__auto____$3 = cljs.core.seq(s__59583__$1);
 if(temp__5804__auto____$3){
-var s__60599__$2 = temp__5804__auto____$3;
-if(cljs.core.chunked_seq_QMARK_(s__60599__$2)){
-var c__5518__auto__ = cljs.core.chunk_first(s__60599__$2);
+var s__59583__$2 = temp__5804__auto____$3;
+if(cljs.core.chunked_seq_QMARK_(s__59583__$2)){
+var c__5518__auto__ = cljs.core.chunk_first(s__59583__$2);
 var size__5519__auto__ = cljs.core.count(c__5518__auto__);
-var b__60601 = cljs.core.chunk_buffer(size__5519__auto__);
-if((function (){var i__60600 = (0);
+var b__59585 = cljs.core.chunk_buffer(size__5519__auto__);
+if((function (){var i__59584 = (0);
 while(true){
-if((i__60600 < size__5519__auto__)){
-var column_index__$1 = cljs.core._nth(c__5518__auto__,i__60600);
-cljs.core.chunk_append(b__60601,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null));
+if((i__59584 < size__5519__auto__)){
+var column_index__$1 = cljs.core._nth(c__5518__auto__,i__59584);
+cljs.core.chunk_append(b__59585,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null));
 
-var G__60641 = (i__60600 + (1));
-i__60600 = G__60641;
+var G__59600 = (i__59584 + (1));
+i__59584 = G__59600;
 continue;
 } else {
 return true;
@@ -637,13 +634,13 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__60601),enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60574_$_iter__60590_$_iter__60598(cljs.core.chunk_rest(s__60599__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__59585),enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59550_$_iter__59574_$_iter__59582(cljs.core.chunk_rest(s__59583__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__60601),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__59585),null);
 }
 } else {
-var column_index__$1 = cljs.core.first(s__60599__$2);
-return cljs.core.cons(new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null),enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60574_$_iter__60590_$_iter__60598(cljs.core.rest(s__60599__$2)));
+var column_index__$1 = cljs.core.first(s__59583__$2);
+return cljs.core.cons(new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"content","content",15833224),null,new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.cell_text_input,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.pin,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null),enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59550_$_iter__59574_$_iter__59582(cljs.core.rest(s__59583__$2)));
 }
 } else {
 return null;
@@ -651,10 +648,10 @@ return null;
 break;
 }
 }),null,null));
-});})(row_index__$1,s__60591__$2,temp__5804__auto____$2,column_index,s__60575__$2,temp__5804__auto____$1,row_index,s__60538__$2,temp__5804__auto__))
+});})(row_index__$1,s__59575__$2,temp__5804__auto____$2,column_index,s__59551__$2,temp__5804__auto____$1,row_index,s__59469__$2,temp__5804__auto__))
 ;
 return iter__5520__auto__(cljs.core.range.cljs$core$IFn$_invoke$arity$1((5)));
-})())], null),enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60574_$_iter__60590(cljs.core.rest(s__60591__$2)));
+})())], null),enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59550_$_iter__59574(cljs.core.rest(s__59575__$2)));
 }
 } else {
 return null;
@@ -662,11 +659,11 @@ return null;
 break;
 }
 }),null,null));
-});})(column_index,s__60575__$2,temp__5804__auto____$1,row_index,s__60538__$2,temp__5804__auto__))
+});})(column_index,s__59551__$2,temp__5804__auto____$1,row_index,s__59469__$2,temp__5804__auto__))
 ;
 return iter__5520__auto__(cljs.core.range.cljs$core$IFn$_invoke$arity$1((5)));
 })())], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null):new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select,enigma_nexus.table.skins.danger,enigma_nexus.table.skins.menu], null),new cljs.core.Keyword(null,"content","content",15833224),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"expanded","expanded",-3020742),false,new cljs.core.Keyword(null,"rows","rows",850049680),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select_header,enigma_nexus.table.skins.expand_collapse], null),new cljs.core.Keyword(null,"content","content",15833224),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null)], null)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select_option], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"content","content",15833224),"B"], null)], null)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"columns","columns",1998437288),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()),new cljs.core.Keyword(null,"component","component",1555936782),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.table.skins.multi_select_option], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY,new cljs.core.Keyword(null,"content","content",15833224),"C"], null)], null)], null)], null)], null),new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY], null)
-))))], 0)),enigma_nexus$tabs$state$empty_tab_$_iter__60537_$_iter__60574(cljs.core.rest(s__60575__$2)));
+))))], 0)),enigma_nexus$tabs$state$add_new_tab_$_iter__59468_$_iter__59550(cljs.core.rest(s__59551__$2)));
 }
 } else {
 return null;
@@ -674,10 +671,10 @@ return null;
 break;
 }
 }),null,null));
-});})(row_index,s__60538__$2,temp__5804__auto__))
+});})(row_index,s__59469__$2,temp__5804__auto__))
 ;
 return iter__5520__auto__(cljs.core.range.cljs$core$IFn$_invoke$arity$1(column_count));
-})())], null),enigma_nexus$tabs$state$empty_tab_$_iter__60537(cljs.core.rest(s__60538__$2)));
+})())], null),enigma_nexus$tabs$state$add_new_tab_$_iter__59468(cljs.core.rest(s__59469__$2)));
 }
 } else {
 return null;
@@ -687,10 +684,7 @@ break;
 }),null,null));
 });
 return iter__5520__auto__(cljs.core.range.cljs$core$IFn$_invoke$arity$1(row_count));
-})())], null));
-});
-enigma_nexus.tabs.state.add_new_tab = (function enigma_nexus$tabs$state$add_new_tab(multi_tab_table_STAR_,row_count,column_count){
-return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$3(multi_tab_table_STAR_,cljs.core.conj,enigma_nexus.tabs.state.empty_tab(row_count,column_count,"New Tab"));
+})())], null)));
 });
 
 //# sourceMappingURL=enigma_nexus.tabs.state.js.map

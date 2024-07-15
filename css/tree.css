@@ -1,25 +1,74 @@
-.tree-node {
-    margin-bottom: 20px;
-    margin-left: 20px;
-
-    .cell-text-input {
-        font-family: "Open Sans", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 300;
-        font-style: normal;
-        font-variation-settings:
-          "wdth" 100;
-    }
+.cell-text-input {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    display: inline-block;
+    vertical-align: middle;
+    width: 190px;
+    height: 32px;
+    font-weight: 700;
+    position: relative;
 }
 
+.tree-node {
+    position: relative;
+    margin-bottom: 0;
+    margin-left: 24px;
+}
 .inner-tree-value {
     display: flex;
-    gap: 10px;
-    margin-bottom: 8px;
+    gap: 4px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-left: 24px;
 }
-
+.inner-tree-children {
+    position: relative;
+}
+.main-tree .inner-tree-children .tree-node::before {
+    position: absolute;
+    top: -8px;
+    left: 8px;
+    width: 8px;
+    height: 24px;
+    border: 2px solid #666;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    margin: auto;
+    content: "";
+    border-bottom-left-radius: 16px;
+}
+.main-tree .inner-tree-children::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 32px;
+    width: 2px;
+    height: calc(100% - 32px);
+    content: "";
+    background-color: #666;
+}
+.tree-node.main-tree {
+    margin-left: 0;
+}
+.tree-node.main-tree > .inner-tree-value:hover {
+    background: rgba(44, 45, 57, 1);
+}
+.tree-node.main-tree > .inner-tree-value:focus {
+    background: rgba(44, 45, 57, 1);
+}
+.tree-node.main-tree.open > .inner-tree-value {
+    background: rgba(251, 126, 20, 0.18);
+}
 .tree-expand-collapse {
     cursor: pointer;
     order: -1;
     color: #B9B9B9;
+    width: 16px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
