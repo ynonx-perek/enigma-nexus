@@ -2,14 +2,14 @@ goog.provide('enigma_nexus.core');
 enigma_nexus.core.router = reitit.frontend.router.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, ["/",new cljs.core.Keyword(null,"index","index",-1531685915)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, ["/items",new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, ["",new cljs.core.Keyword(null,"items","items",1031954938)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, ["/:item-id",new cljs.core.Keyword(null,"item","item",249373802)], null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, ["/about",new cljs.core.Keyword(null,"about","about",1423892543)], null)], null));
 enigma_nexus.core.path_for = (function enigma_nexus$core$path_for(var_args){
 var args__5772__auto__ = [];
-var len__5766__auto___62971 = arguments.length;
-var i__5767__auto___62972 = (0);
+var len__5766__auto___63288 = arguments.length;
+var i__5767__auto___63289 = (0);
 while(true){
-if((i__5767__auto___62972 < len__5766__auto___62971)){
-args__5772__auto__.push((arguments[i__5767__auto___62972]));
+if((i__5767__auto___63289 < len__5766__auto___63288)){
+args__5772__auto__.push((arguments[i__5767__auto___63289]));
 
-var G__62973 = (i__5767__auto___62972 + (1));
-i__5767__auto___62972 = G__62973;
+var G__63290 = (i__5767__auto___63289 + (1));
+i__5767__auto___63289 = G__63290;
 continue;
 } else {
 }
@@ -20,9 +20,9 @@ var argseq__5773__auto__ = ((((1) < args__5772__auto__.length))?(new cljs.core.I
 return enigma_nexus.core.path_for.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__5773__auto__);
 });
 
-(enigma_nexus.core.path_for.cljs$core$IFn$_invoke$arity$variadic = (function (route,p__62951){
-var vec__62952 = p__62951;
-var params = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__62952,(0),null);
+(enigma_nexus.core.path_for.cljs$core$IFn$_invoke$arity$variadic = (function (route,p__63269){
+var vec__63270 = p__63269;
+var params = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__63270,(0),null);
 if(cljs.core.truth_(params)){
 return new cljs.core.Keyword(null,"path","path",-188191168).cljs$core$IFn$_invoke$arity$1(reitit.frontend.match_by_name.cljs$core$IFn$_invoke$arity$3(enigma_nexus.core.router,route,params));
 } else {
@@ -33,20 +33,20 @@ return new cljs.core.Keyword(null,"path","path",-188191168).cljs$core$IFn$_invok
 (enigma_nexus.core.path_for.cljs$lang$maxFixedArity = (1));
 
 /** @this {Function} */
-(enigma_nexus.core.path_for.cljs$lang$applyTo = (function (seq62949){
-var G__62950 = cljs.core.first(seq62949);
-var seq62949__$1 = cljs.core.next(seq62949);
+(enigma_nexus.core.path_for.cljs$lang$applyTo = (function (seq63267){
+var G__63268 = cljs.core.first(seq63267);
+var seq63267__$1 = cljs.core.next(seq63267);
 var self__5751__auto__ = this;
-return self__5751__auto__.cljs$core$IFn$_invoke$arity$variadic(G__62950,seq62949__$1);
+return self__5751__auto__.cljs$core$IFn$_invoke$arity$variadic(G__63268,seq63267__$1);
 }));
 
 enigma_nexus.core.main_menu = (function enigma_nexus$core$main_menu(props){
-var with_let62957 = reagent.ratom.with_let_values(new cljs.core.Keyword(null,"with-let62957","with-let62957",1818244580));
-var temp__5808__auto___62974 = reagent.ratom._STAR_ratom_context_STAR_;
-if((temp__5808__auto___62974 == null)){
+var with_let63275 = reagent.ratom.with_let_values(new cljs.core.Keyword(null,"with-let63275","with-let63275",1747027677));
+var temp__5808__auto___63291 = reagent.ratom._STAR_ratom_context_STAR_;
+if((temp__5808__auto___63291 == null)){
 } else {
-var c__59044__auto___62975 = temp__5808__auto___62974;
-if((with_let62957.generation === c__59044__auto___62975.ratomGeneration)){
+var c__59044__auto___63292 = temp__5808__auto___63291;
+if((with_let63275.generation === c__59044__auto___63292.ratomGeneration)){
 if(reagent.debug.has_console){
 ((reagent.debug.tracking)?reagent.debug.track_console:console).error(["Warning: The same with-let is being used more ","than once in the same reactive context."].join(''));
 } else {
@@ -54,13 +54,13 @@ if(reagent.debug.has_console){
 } else {
 }
 
-(with_let62957.generation = c__59044__auto___62975.ratomGeneration);
+(with_let63275.generation = c__59044__auto___63292.ratomGeneration);
 }
 
-var init62958 = (with_let62957.length === (0));
-var res62959 = (function (){var map__62960 = props;
-var map__62960__$1 = cljs.core.__destructure_map(map__62960);
-var page_STAR_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__62960__$1,new cljs.core.Keyword(null,"page*","page*",-26389174));
+var init63276 = (with_let63275.length === (0));
+var res63277 = (function (){var map__63278 = props;
+var map__63278__$1 = cljs.core.__destructure_map(map__63278);
+var page_STAR_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__63278__$1,new cljs.core.Keyword(null,"page*","page*",-26389174));
 return new cljs.core.PersistentVector(null, 9, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),"main-menu"], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"button","button",1456579943),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (){
 return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$3(page_STAR_,cljs.core.conj,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"side","side",389652279),new cljs.core.Keyword(null,"right","right",-452581833),new cljs.core.Keyword(null,"props","props",453281727),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tree*","tree*",1569275947),reagent.core.atom.cljs$core$IFn$_invoke$arity$1(cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),"main-tree"], null),enigma_nexus.compile.rw_schema.compile_to_tree(enigma_nexus.compile.demo.sut_data)], 0)))], null),new cljs.core.Keyword(null,"component","component",1555936782),enigma_nexus.tree.rw.tree.tree_widget], null));
 })], null),"Add RW Schema Tree (SUT Data)"], null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"button","button",1456579943),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (){
@@ -74,10 +74,10 @@ return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$3(page_STAR_,cljs.core.c
 }));
 
 return reader.readAsText(file);
-})], null)], null),(cljs.core.truth_(cljs.core.first(cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__62955_SHARP_){
-return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"id","id",-1388402092).cljs$core$IFn$_invoke$arity$1(p1__62955_SHARP_),new cljs.core.Keyword(null,"file","file",-1269645878));
-}),cljs.core.deref(page_STAR_))))?new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"a","a",-2123407586),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"href","href",-793805698),["data:text/json;charset=utf-8,",cljs.core.str.cljs$core$IFn$_invoke$arity$1(encodeURIComponent(JSON.stringify(cljs.core.clj__GT_js(enigma_nexus.compile.rw_schema.decompile_from_tree(cljs.core.deref(cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(cljs.core.first(cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__62956_SHARP_){
-return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"id","id",-1388402092).cljs$core$IFn$_invoke$arity$1(p1__62956_SHARP_),new cljs.core.Keyword(null,"file","file",-1269645878));
+})], null)], null),(cljs.core.truth_(cljs.core.first(cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__63273_SHARP_){
+return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"id","id",-1388402092).cljs$core$IFn$_invoke$arity$1(p1__63273_SHARP_),new cljs.core.Keyword(null,"file","file",-1269645878));
+}),cljs.core.deref(page_STAR_))))?new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"a","a",-2123407586),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"href","href",-793805698),["data:text/json;charset=utf-8,",cljs.core.str.cljs$core$IFn$_invoke$arity$1(encodeURIComponent(JSON.stringify(cljs.core.clj__GT_js(enigma_nexus.compile.rw_schema.decompile_from_tree(cljs.core.deref(cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(cljs.core.first(cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__63274_SHARP_){
+return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"id","id",-1388402092).cljs$core$IFn$_invoke$arity$1(p1__63274_SHARP_),new cljs.core.Keyword(null,"file","file",-1269645878));
 }),cljs.core.deref(page_STAR_))),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"props","props",453281727),new cljs.core.Keyword(null,"tree*","tree*",1569275947)], null))))),null,(2))))].join(''),new cljs.core.Keyword(null,"download","download",-300081668),"data.json"], null),"Download"], null):null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"button","button",1456579943),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (){
 return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$3(page_STAR_,cljs.core.conj,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"side","side",389652279),new cljs.core.Keyword(null,"right","right",-452581833),new cljs.core.Keyword(null,"props","props",453281727),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"table-data*","table-data*",1671610004),reagent.core.atom.cljs$core$IFn$_invoke$arity$1(enigma_nexus.compile.rw_schema.compile_to_table(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [(1),(2),(3)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [(4),(5),(6)], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [(8)], null)], null))),new cljs.core.Keyword(null,"class","class",-2030961996),"main-table"], null),new cljs.core.Keyword(null,"component","component",1555936782),enigma_nexus.table.table.table], null));
 })], null),"Add SUT Data Table Table"], null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"button","button",1456579943),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (){
@@ -93,15 +93,15 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
 return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$3(page_STAR_,cljs.core.conj,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"side","side",389652279),new cljs.core.Keyword(null,"right","right",-452581833),new cljs.core.Keyword(null,"props","props",453281727),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tree*","tree*",1569275947),enigma_nexus.compile.demo.demo_data_from_figma], null),new cljs.core.Keyword(null,"component","component",1555936782),enigma_nexus.tree.rw.tree.tree_widget], null));
 })], null),"Add Tree 2"], null)], null)], null);
 })();
-return res62959;
+return res63277;
 });
 enigma_nexus.core.home_page = (function enigma_nexus$core$home_page(){
-var with_let62963 = reagent.ratom.with_let_values(new cljs.core.Keyword(null,"with-let62963","with-let62963",-1755971672));
-var temp__5808__auto___62976 = reagent.ratom._STAR_ratom_context_STAR_;
-if((temp__5808__auto___62976 == null)){
+var with_let63281 = reagent.ratom.with_let_values(new cljs.core.Keyword(null,"with-let63281","with-let63281",2121634426));
+var temp__5808__auto___63293 = reagent.ratom._STAR_ratom_context_STAR_;
+if((temp__5808__auto___63293 == null)){
 } else {
-var c__59044__auto___62977 = temp__5808__auto___62976;
-if((with_let62963.generation === c__59044__auto___62977.ratomGeneration)){
+var c__59044__auto___63294 = temp__5808__auto___63293;
+if((with_let63281.generation === c__59044__auto___63294.ratomGeneration)){
 if(reagent.debug.has_console){
 ((reagent.debug.tracking)?reagent.debug.track_console:console).error(["Warning: The same with-let is being used more ","than once in the same reactive context."].join(''));
 } else {
@@ -109,32 +109,32 @@ if(reagent.debug.has_console){
 } else {
 }
 
-(with_let62963.generation = c__59044__auto___62977.ratomGeneration);
+(with_let63281.generation = c__59044__auto___63294.ratomGeneration);
 }
 
-var init62964 = (with_let62963.length === (0));
-var page_STAR_ = ((((init62964) || (cljs.core.not(with_let62963.hasOwnProperty((0))))))?(with_let62963[(0)] = reagent.core.atom.cljs$core$IFn$_invoke$arity$1(cljs.core.PersistentVector.EMPTY)):(with_let62963[(0)]));
-var res62965 = (function (){var left = cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__62961_SHARP_){
-return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"side","side",389652279).cljs$core$IFn$_invoke$arity$1(p1__62961_SHARP_),new cljs.core.Keyword(null,"left","left",-399115937));
+var init63282 = (with_let63281.length === (0));
+var page_STAR_ = ((((init63282) || (cljs.core.not(with_let63281.hasOwnProperty((0))))))?(with_let63281[(0)] = reagent.core.atom.cljs$core$IFn$_invoke$arity$1(cljs.core.PersistentVector.EMPTY)):(with_let63281[(0)]));
+var res63283 = (function (){var left = cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__63279_SHARP_){
+return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"side","side",389652279).cljs$core$IFn$_invoke$arity$1(p1__63279_SHARP_),new cljs.core.Keyword(null,"left","left",-399115937));
 }),cljs.core.deref(page_STAR_));
-var right = cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__62962_SHARP_){
-return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"side","side",389652279).cljs$core$IFn$_invoke$arity$1(p1__62962_SHARP_),new cljs.core.Keyword(null,"right","right",-452581833));
+var right = cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__63280_SHARP_){
+return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(new cljs.core.Keyword(null,"side","side",389652279).cljs$core$IFn$_invoke$arity$1(p1__63280_SHARP_),new cljs.core.Keyword(null,"right","right",-452581833));
 }),cljs.core.deref(page_STAR_));
-return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.container","div.container",72419955),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),"homepage"], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),"left"], null),cljs.core.doall.cljs$core$IFn$_invoke$arity$1(cljs.core.map_indexed.cljs$core$IFn$_invoke$arity$2((function (index,p__62966){
-var map__62967 = p__62966;
-var map__62967__$1 = cljs.core.__destructure_map(map__62967);
-var props = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__62967__$1,new cljs.core.Keyword(null,"props","props",453281727));
-var component = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__62967__$1,new cljs.core.Keyword(null,"component","component",1555936782));
+return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.container","div.container",72419955),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),"homepage"], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),"left"], null),cljs.core.doall.cljs$core$IFn$_invoke$arity$1(cljs.core.map_indexed.cljs$core$IFn$_invoke$arity$2((function (index,p__63284){
+var map__63285 = p__63284;
+var map__63285__$1 = cljs.core.__destructure_map(map__63285);
+var props = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__63285__$1,new cljs.core.Keyword(null,"props","props",453281727));
+var component = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__63285__$1,new cljs.core.Keyword(null,"component","component",1555936782));
 return cljs.core.with_meta(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [component,props], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [component,"left",index], null)], null));
-}),left))], null),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),"right"], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.core.main_menu,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"page*","page*",-26389174),page_STAR_], null)], null),cljs.core.doall.cljs$core$IFn$_invoke$arity$1(cljs.core.map_indexed.cljs$core$IFn$_invoke$arity$2((function (index,p__62968){
-var map__62969 = p__62968;
-var map__62969__$1 = cljs.core.__destructure_map(map__62969);
-var props = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__62969__$1,new cljs.core.Keyword(null,"props","props",453281727));
-var component = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__62969__$1,new cljs.core.Keyword(null,"component","component",1555936782));
+}),left))], null),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),"right"], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [enigma_nexus.core.main_menu,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"page*","page*",-26389174),page_STAR_], null)], null),cljs.core.doall.cljs$core$IFn$_invoke$arity$1(cljs.core.map_indexed.cljs$core$IFn$_invoke$arity$2((function (index,p__63286){
+var map__63287 = p__63286;
+var map__63287__$1 = cljs.core.__destructure_map(map__63287);
+var props = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__63287__$1,new cljs.core.Keyword(null,"props","props",453281727));
+var component = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__63287__$1,new cljs.core.Keyword(null,"component","component",1555936782));
 return cljs.core.with_meta(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [component,props], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [component,"right",index], null)], null));
 }),right))], null)], null);
 })();
-return res62965;
+return res63283;
 });
 enigma_nexus.core.items_page = (function enigma_nexus$core$items_page(){
 return (function (){
@@ -156,29 +156,7 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
 });
 });
 enigma_nexus.core.page_for = (function enigma_nexus$core$page_for(route){
-var G__62970 = route;
-var G__62970__$1 = (((G__62970 instanceof cljs.core.Keyword))?G__62970.fqn:null);
-switch (G__62970__$1) {
-case "index":
 return new cljs.core.Var(function(){return enigma_nexus.core.home_page;},new cljs.core.Symbol("enigma-nexus.core","home-page","enigma-nexus.core/home-page",115086665,null),cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"ns","ns",441598760),new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"file","file",-1269645878),new cljs.core.Keyword(null,"end-column","end-column",1425389514),new cljs.core.Keyword(null,"column","column",2078222095),new cljs.core.Keyword(null,"line","line",212345235),new cljs.core.Keyword(null,"end-line","end-line",1837326455),new cljs.core.Keyword(null,"arglists","arglists",1661989754),new cljs.core.Keyword(null,"doc","doc",1913296891),new cljs.core.Keyword(null,"test","test",577538877)],[new cljs.core.Symbol(null,"enigma-nexus.core","enigma-nexus.core",98428082,null),new cljs.core.Symbol(null,"home-page","home-page",-850279575,null),"enigma_nexus/core.cljs",16,1,121,121,cljs.core.list(cljs.core.PersistentVector.EMPTY),null,(cljs.core.truth_(enigma_nexus.core.home_page)?enigma_nexus.core.home_page.cljs$lang$test:null)]));
-
-break;
-case "about":
-return new cljs.core.Var(function(){return enigma_nexus.core.about_page;},new cljs.core.Symbol("enigma-nexus.core","about-page","enigma-nexus.core/about-page",1000983241,null),cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"ns","ns",441598760),new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"file","file",-1269645878),new cljs.core.Keyword(null,"end-column","end-column",1425389514),new cljs.core.Keyword(null,"column","column",2078222095),new cljs.core.Keyword(null,"line","line",212345235),new cljs.core.Keyword(null,"end-line","end-line",1837326455),new cljs.core.Keyword(null,"arglists","arglists",1661989754),new cljs.core.Keyword(null,"doc","doc",1913296891),new cljs.core.Keyword(null,"test","test",577538877)],[new cljs.core.Symbol(null,"enigma-nexus.core","enigma-nexus.core",98428082,null),new cljs.core.Symbol(null,"about-page","about-page",2116788009,null),"enigma_nexus/core.cljs",17,1,160,160,cljs.core.list(cljs.core.PersistentVector.EMPTY),null,(cljs.core.truth_(enigma_nexus.core.about_page)?enigma_nexus.core.about_page.cljs$lang$test:null)]));
-
-break;
-case "items":
-return new cljs.core.Var(function(){return enigma_nexus.core.items_page;},new cljs.core.Symbol("enigma-nexus.core","items-page","enigma-nexus.core/items-page",-387887578,null),cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"ns","ns",441598760),new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"file","file",-1269645878),new cljs.core.Keyword(null,"end-column","end-column",1425389514),new cljs.core.Keyword(null,"column","column",2078222095),new cljs.core.Keyword(null,"line","line",212345235),new cljs.core.Keyword(null,"end-line","end-line",1837326455),new cljs.core.Keyword(null,"arglists","arglists",1661989754),new cljs.core.Keyword(null,"doc","doc",1913296891),new cljs.core.Keyword(null,"test","test",577538877)],[new cljs.core.Symbol(null,"enigma-nexus.core","enigma-nexus.core",98428082,null),new cljs.core.Symbol(null,"items-page","items-page",-1402798074,null),"enigma_nexus/core.cljs",17,1,141,141,cljs.core.list(cljs.core.PersistentVector.EMPTY),null,(cljs.core.truth_(enigma_nexus.core.items_page)?enigma_nexus.core.items_page.cljs$lang$test:null)]));
-
-break;
-case "item":
-return new cljs.core.Var(function(){return enigma_nexus.core.item_page;},new cljs.core.Symbol("enigma-nexus.core","item-page","enigma-nexus.core/item-page",-1997988004,null),cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"ns","ns",441598760),new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"file","file",-1269645878),new cljs.core.Keyword(null,"end-column","end-column",1425389514),new cljs.core.Keyword(null,"column","column",2078222095),new cljs.core.Keyword(null,"line","line",212345235),new cljs.core.Keyword(null,"end-line","end-line",1837326455),new cljs.core.Keyword(null,"arglists","arglists",1661989754),new cljs.core.Keyword(null,"doc","doc",1913296891),new cljs.core.Keyword(null,"test","test",577538877)],[new cljs.core.Symbol(null,"enigma-nexus.core","enigma-nexus.core",98428082,null),new cljs.core.Symbol(null,"item-page","item-page",1282130364,null),"enigma_nexus/core.cljs",16,1,151,151,cljs.core.list(cljs.core.PersistentVector.EMPTY),null,(cljs.core.truth_(enigma_nexus.core.item_page)?enigma_nexus.core.item_page.cljs$lang$test:null)]));
-
-break;
-default:
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__62970__$1)].join('')));
-
-}
 });
 enigma_nexus.core.current_page = (function enigma_nexus$core$current_page(){
 return (function (){
