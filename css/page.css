@@ -38,3 +38,17 @@ h1 {
     line-height: 1.2;
     font-weight: bold;
 }
+
+.cell-text-input {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    display: inline-block;
+    vertical-align: middle;
+    width: 190px;
+    height: 32px;
+    font-weight: 700;
+    position: relative;
+}

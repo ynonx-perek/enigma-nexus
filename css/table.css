@@ -103,7 +103,6 @@
   }
 
 .container {
-    max-width: 1280px;
     margin: 0 auto;
     padding-top: 20px;
 }
@@ -184,6 +183,10 @@
     flex-direction: row;
     align-items: flex-start;
     height: 46px;
+}
+
+.main-table-row > .tree-node {
+    display: table-cell;
 }
 
 .main-table-cell {

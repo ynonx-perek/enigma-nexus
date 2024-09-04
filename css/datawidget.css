@@ -1,0 +1,189 @@
+.dw-table-row {
+    display: flex;
+}
+
+.dw-tree-row {
+    margin-left: 2rem;
+}
+
+.dw-table-row .data-cell {
+    padding: 1rem 2rem;
+    border: 1px solid #999;
+    position: relative;
+}
+
+.dw-table-row .kebab-menu {
+    color: white;
+    cursor: pointer;
+}
+
+.table {
+    display: table;
+}
+
+.dw-table-row {
+    display: table-row;  
+}
+
+.dw-table-cell {
+    display: table-cell;
+    position: relative;
+    height: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-top-color: var(--color-table-border);
+    border-bottom-color: var(--color-table-border);
+    border-left-color: var(--color-table-border);
+    border-right-color: var(--color-table-border);
+    background-color: var(--color-background);
+    color: var(--color-table-header);
+    font-weight: var(--font-weight-bold);
+    padding: 13px 14px 13px 30px;
+    line-height: var(--line-height-2);
+    font-size: var(--font-size-2);    
+    min-width: 300px;
+}
+
+.table-node {
+    min-width: 300px;
+}
+
+.dw-cell-header {
+    background: orange;
+    color: white;
+}
+
+.select-header span {
+    display: inline-block;
+    padding: 2px;
+    margin: 5px;
+    background: lightgoldenrodyellow;
+    color: black;
+    border-radius: 5px;
+}
+
+.menu-root {
+    position: relative;
+}
+
+.tree-horizontal > .children {
+    display: flex;
+    flex-direction: row;
+}
+
+.tree-vertical > .children {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-by-side {
+    display: inline-block;
+    max-width: 50%;
+    box-sizing: border-box;
+}
+
+.cell-text-input.full-w {
+    width: 100%;
+}
+
+/** vertical line **/
+.tree-vertical > .skins::after {
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    left: 12px;
+    width: 2px;
+    height: calc(100% - 60px);
+    content: "";
+    background-color: #666;
+}
+
+.skin-expand-collapse {
+    width: 25px;
+}
+
+.tree-kebab-icon {
+    button {
+        background: transparent;
+        border: 0;
+        outline: 0;
+        width: 30px;
+        height: 15px;
+        cursor: pointer;
+    }
+}
+
+.tree-node > .children > .collection-item > * {
+    order: 0;
+}
+
+.tree-node > .children > .collection-item {
+    display: flex;
+    padding-left: 15px;
+    margin: 2px 0;
+}
+
+.tree-node > .children > .collection-item .tree-menu-root {
+    order: -1;
+    display: flex;
+    align-items: center;
+}
+
+.tree-node > .children > .collection-item {
+    position: relative;
+    margin-bottom: 0;
+    margin-left: 24px;
+}
+
+.tree-node > .children > .collection-item::before {
+    position: absolute;
+    top: -10px;
+    left: -12px;
+    width: 8px;
+    height: 24px;
+    border: 2px solid #666;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    margin: auto;
+    content: "";
+    border-bottom-left-radius: 16px;
+}
+
+.dw-table-row > .children > .collection-item {
+    display: contents;
+}
+
+.table > .children > .collection-item {
+    display: contents;
+}
+
+
+.dw-table-cell .kebab-icon svg {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.dw-table-cell svg {
+    width: 15px;
+    height: 15px;
+}
+
+.tree-submenu svg {
+    width: 15px;
+    height: 15px;
+}
+
+.show-hide-menu-icon {
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+
+.kebab-icon {
+    position: absolute;
+    left: -35px;
+    top: calc(50% - 27px);
+    cursor: pointer;
+}
+
