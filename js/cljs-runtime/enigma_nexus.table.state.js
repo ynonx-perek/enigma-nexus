@@ -2,22 +2,22 @@ goog.provide('enigma_nexus.table.state');
 enigma_nexus.table.state.change_selection_at = (function enigma_nexus$table$state$change_selection_at(data_STAR_,row_index,column_index,new_value,column_count){
 cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(data_STAR_,cljs.core.assoc_in,new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"data","data",-232669377),row_index,new cljs.core.Keyword(null,"data","data",-232669377),column_index,new cljs.core.Keyword(null,"data","data",-232669377)], null),new_value);
 
-return cljs.core.doall.cljs$core$IFn$_invoke$arity$1((function (){var iter__5520__auto__ = (function enigma_nexus$table$state$change_selection_at_$_iter__69838(s__69839){
+return cljs.core.doall.cljs$core$IFn$_invoke$arity$1((function (){var iter__5520__auto__ = (function enigma_nexus$table$state$change_selection_at_$_iter__61192(s__61193){
 return (new cljs.core.LazySeq(null,(function (){
-var s__69839__$1 = s__69839;
+var s__61193__$1 = s__61193;
 while(true){
-var temp__5804__auto__ = cljs.core.seq(s__69839__$1);
+var temp__5804__auto__ = cljs.core.seq(s__61193__$1);
 if(temp__5804__auto__){
-var s__69839__$2 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__69839__$2)){
-var c__5518__auto__ = cljs.core.chunk_first(s__69839__$2);
+var s__61193__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__61193__$2)){
+var c__5518__auto__ = cljs.core.chunk_first(s__61193__$2);
 var size__5519__auto__ = cljs.core.count(c__5518__auto__);
-var b__69841 = cljs.core.chunk_buffer(size__5519__auto__);
-if((function (){var i__69840 = (0);
+var b__61195 = cljs.core.chunk_buffer(size__5519__auto__);
+if((function (){var i__61194 = (0);
 while(true){
-if((i__69840 < size__5519__auto__)){
-var c = cljs.core._nth(c__5518__auto__,i__69840);
-cljs.core.chunk_append(b__69841,(function (){var on_cascade = (function (){var or__5043__auto__ = cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(data_STAR_),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"data","data",-232669377),row_index,new cljs.core.Keyword(null,"data","data",-232669377),c,new cljs.core.Keyword(null,"on-cascade","on-cascade",-177099510)], null));
+if((i__61194 < size__5519__auto__)){
+var c = cljs.core._nth(c__5518__auto__,i__61194);
+cljs.core.chunk_append(b__61195,(function (){var on_cascade = (function (){var or__5043__auto__ = cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(data_STAR_),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"data","data",-232669377),row_index,new cljs.core.Keyword(null,"data","data",-232669377),c,new cljs.core.Keyword(null,"on-cascade","on-cascade",-177099510)], null));
 if(cljs.core.truth_(or__5043__auto__)){
 return or__5043__auto__;
 } else {
@@ -27,8 +27,8 @@ return cljs.core.identity;
 return (on_cascade.cljs$core$IFn$_invoke$arity$6 ? on_cascade.cljs$core$IFn$_invoke$arity$6(data_STAR_,row_index,column_index,new_value,row_index,c) : on_cascade.call(null,data_STAR_,row_index,column_index,new_value,row_index,c));
 })());
 
-var G__70028 = (i__69840 + (1));
-i__69840 = G__70028;
+var G__61278 = (i__61194 + (1));
+i__61194 = G__61278;
 continue;
 } else {
 return true;
@@ -36,12 +36,12 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__69841),enigma_nexus$table$state$change_selection_at_$_iter__69838(cljs.core.chunk_rest(s__69839__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__61195),enigma_nexus$table$state$change_selection_at_$_iter__61192(cljs.core.chunk_rest(s__61193__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__69841),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__61195),null);
 }
 } else {
-var c = cljs.core.first(s__69839__$2);
+var c = cljs.core.first(s__61193__$2);
 return cljs.core.cons((function (){var on_cascade = (function (){var or__5043__auto__ = cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(data_STAR_),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"data","data",-232669377),row_index,new cljs.core.Keyword(null,"data","data",-232669377),c,new cljs.core.Keyword(null,"on-cascade","on-cascade",-177099510)], null));
 if(cljs.core.truth_(or__5043__auto__)){
 return or__5043__auto__;
@@ -50,7 +50,7 @@ return cljs.core.identity;
 }
 })();
 return (on_cascade.cljs$core$IFn$_invoke$arity$6 ? on_cascade.cljs$core$IFn$_invoke$arity$6(data_STAR_,row_index,column_index,new_value,row_index,c) : on_cascade.call(null,data_STAR_,row_index,column_index,new_value,row_index,c));
-})(),enigma_nexus$table$state$change_selection_at_$_iter__69838(cljs.core.rest(s__69839__$2)));
+})(),enigma_nexus$table$state$change_selection_at_$_iter__61192(cljs.core.rest(s__61193__$2)));
 }
 } else {
 return null;
@@ -74,8 +74,8 @@ enigma_nexus.table.state.set_row_indicators = (function enigma_nexus$table$state
 return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$2(data_STAR_,(function (data){
 var row_cells = cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(data,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"data","data",-232669377),row_index,new cljs.core.Keyword(null,"data","data",-232669377)], null));
 var row_with_indicators = cljs.core.vec(cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (cell){
-return cljs.core.update.cljs$core$IFn$_invoke$arity$3(cell,new cljs.core.Keyword(null,"indicators","indicators",1312373003),(function (p1__69924_SHARP_){
-return cljs.core.conj.cljs$core$IFn$_invoke$arity$2((function (){var or__5043__auto__ = p1__69924_SHARP_;
+return cljs.core.update.cljs$core$IFn$_invoke$arity$3(cell,new cljs.core.Keyword(null,"indicators","indicators",1312373003),(function (p1__61218_SHARP_){
+return cljs.core.conj.cljs$core$IFn$_invoke$arity$2((function (){var or__5043__auto__ = p1__61218_SHARP_;
 if(cljs.core.truth_(or__5043__auto__)){
 return or__5043__auto__;
 } else {
@@ -91,8 +91,8 @@ enigma_nexus.table.state.clear_row_indicators = (function enigma_nexus$table$sta
 return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$2(data_STAR_,(function (data){
 var row = cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(data,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"data","data",-232669377),row_index,new cljs.core.Keyword(null,"data","data",-232669377)], null));
 var row_with_indicators = cljs.core.vec(cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (cell){
-return cljs.core.update.cljs$core$IFn$_invoke$arity$3(cell,new cljs.core.Keyword(null,"indicators","indicators",1312373003),(function (p1__69940_SHARP_){
-return cljs.core.disj.cljs$core$IFn$_invoke$arity$2((function (){var or__5043__auto__ = p1__69940_SHARP_;
+return cljs.core.update.cljs$core$IFn$_invoke$arity$3(cell,new cljs.core.Keyword(null,"indicators","indicators",1312373003),(function (p1__61223_SHARP_){
+return cljs.core.disj.cljs$core$IFn$_invoke$arity$2((function (){var or__5043__auto__ = p1__61223_SHARP_;
 if(cljs.core.truth_(or__5043__auto__)){
 return or__5043__auto__;
 } else {
@@ -109,21 +109,21 @@ return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$2(data_STAR_,(function (
 var rows = new cljs.core.Keyword(null,"data","data",-232669377).cljs$core$IFn$_invoke$arity$1(data);
 var row_to_duplicate = cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(data,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"data","data",-232669377),row_index], null));
 var copy_of_row_with_new_id = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(row_to_duplicate,new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()));
-var new_row = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(copy_of_row_with_new_id,new cljs.core.Keyword(null,"data","data",-232669377),cljs.core.vec(cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__69949_SHARP_){
-return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(p1__69949_SHARP_,new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY),new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()));
+var new_row = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(copy_of_row_with_new_id,new cljs.core.Keyword(null,"data","data",-232669377),cljs.core.vec(cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__61227_SHARP_){
+return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(p1__61227_SHARP_,new cljs.core.Keyword(null,"indicators","indicators",1312373003),cljs.core.PersistentHashSet.EMPTY),new cljs.core.Keyword(null,"id","id",-1388402092),cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.random_uuid()));
 }),new cljs.core.Keyword(null,"data","data",-232669377).cljs$core$IFn$_invoke$arity$1(copy_of_row_with_new_id))));
-var vec__69974 = cljs.core.split_at((row_index + (1)),rows);
-var l = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__69974,(0),null);
-var r = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__69974,(1),null);
+var vec__61229 = cljs.core.split_at((row_index + (1)),rows);
+var l = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__61229,(0),null);
+var r = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__61229,(1),null);
 return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(data,new cljs.core.Keyword(null,"data","data",-232669377),cljs.core.vec(cljs.core.concat.cljs$core$IFn$_invoke$arity$variadic(l,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new_row], null),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([r], 0))));
 }));
 });
 enigma_nexus.table.state.new_row_BANG_ = (function enigma_nexus$table$state$new_row_BANG_(data_STAR_,row_index,row_template){
 return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$2(data_STAR_,(function (data){
 var rows = new cljs.core.Keyword(null,"data","data",-232669377).cljs$core$IFn$_invoke$arity$1(data);
-var vec__69984 = cljs.core.split_at((row_index + (1)),rows);
-var l = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__69984,(0),null);
-var r = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__69984,(1),null);
+var vec__61237 = cljs.core.split_at((row_index + (1)),rows);
+var l = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__61237,(0),null);
+var r = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__61237,(1),null);
 return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(data,new cljs.core.Keyword(null,"data","data",-232669377),cljs.core.vec(cljs.core.concat.cljs$core$IFn$_invoke$arity$variadic(l,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [row_template], null),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([r], 0))));
 }));
 });
@@ -191,10 +191,10 @@ return enigma_nexus.table.state.delete_nth(columns,column_index);
 }));
 }),rows);
 })),new cljs.core.Keyword(null,"row-templates","row-templates",-852911039),(function (templates){
-return cljs.core.into.cljs$core$IFn$_invoke$arity$2(cljs.core.PersistentArrayMap.EMPTY,cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p__70004){
-var vec__70005 = p__70004;
-var template_name = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__70005,(0),null);
-var template_object = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__70005,(1),null);
+return cljs.core.into.cljs$core$IFn$_invoke$arity$2(cljs.core.PersistentArrayMap.EMPTY,cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p__61259){
+var vec__61260 = p__61259;
+var template_name = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__61260,(0),null);
+var template_object = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__61260,(1),null);
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [template_name,cljs.core.update.cljs$core$IFn$_invoke$arity$3(template_object,new cljs.core.Keyword(null,"data","data",-232669377),(function (columns){
 return enigma_nexus.table.state.delete_nth(columns,column_index);
 }))], null);
